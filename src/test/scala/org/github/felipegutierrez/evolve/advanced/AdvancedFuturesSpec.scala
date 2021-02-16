@@ -1,4 +1,4 @@
-package org.github.felipegutierrez.explore.recap
+package org.github.felipegutierrez.evolve.advanced
 
 import org.scalatest.flatspec.AnyFlatSpec
 
@@ -8,7 +8,7 @@ import scala.util.Success
 
 class AdvancedFuturesSpec extends AnyFlatSpec {
 
-  import AdvancedFutures._
+  import org.github.felipegutierrez.explore.recap.AdvancedFutures._
 
   if (Runtime.getRuntime().availableProcessors() >= 4) {
     "a future with timeout" should
