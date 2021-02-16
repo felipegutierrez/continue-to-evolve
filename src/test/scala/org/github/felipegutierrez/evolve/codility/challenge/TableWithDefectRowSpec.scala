@@ -1,4 +1,4 @@
-package org.github.felipegutierrez.explore.recap.codility.challenge
+package org.github.felipegutierrez.evolve.codility.challenge
 
 import org.scalatest.flatspec.AnyFlatSpec
 
