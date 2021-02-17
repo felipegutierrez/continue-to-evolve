@@ -1,4 +1,4 @@
-package org.github.felipegutierrez.evolve.advanced
+package org.github.felipegutierrez.evolve.basics
 
 import org.scalatest.flatspec.AnyFlatSpec
 

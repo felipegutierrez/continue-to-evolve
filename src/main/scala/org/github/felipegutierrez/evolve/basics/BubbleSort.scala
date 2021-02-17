@@ -1,7 +1,11 @@
-package org.github.felipegutierrez.evolve.advanced
+package org.github.felipegutierrez.evolve.basics
 
 object BubbleSort {
-  def main(args: Array[String]): Unit = {
+  //  def main(args: Array[String]): Unit = {
+  //    run()
+  //  }
+
+  def run(): Unit = {
     val arr = Array(5, 3, 2, 5, 6, 77, 99, 88)
     var temp = 0
     var fixed = false

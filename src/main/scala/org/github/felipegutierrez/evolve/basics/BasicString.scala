@@ -1,9 +1,9 @@
-package org.github.felipegutierrez.evolve.advanced
+package org.github.felipegutierrez.evolve.basics
 
 object BasicString {
-//  def main(args: Array[String]): Unit = {
-//    run()
-//  }
+  //  def main(args: Array[String]): Unit = {
+  //    run()
+  //  }
 
   def run() = {
     val nameStringList = List("John Kennedy", "Mary B H Kennedy")

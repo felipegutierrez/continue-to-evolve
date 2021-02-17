@@ -1,12 +1,12 @@
-package org.github.felipegutierrez.evolve.advanced
+package org.github.felipegutierrez.evolve.basics
 
 import scala.annotation.tailrec
 import scala.util.Try
 
 object BasicRecap {
-//  def main(args: Array[String]): Unit = {
-//    run()
-//  }
+  //  def main(args: Array[String]): Unit = {
+  //    run()
+  //  }
 
   def run(): Unit = {
     testForComprehensions(List(1, 2, 3, 4, 5), List("a", "b"), "-")
@@ -96,6 +96,7 @@ object BasicRecap {
       if (n <= 0) acc
       else factorial(n - 1, acc * n)
     }
+
     factorial(n, 1)
   }
 
@@ -105,6 +106,7 @@ object BasicRecap {
       if (n <= 0) accumulator
       else factorialWithTailrec(n - 1, n * accumulator)
     }
+
     factorialWithTailrec(n, 1)
   }
 
@@ -129,4 +131,5 @@ object BasicRecap {
 
   // companion objects
   object MyList
+
 }
