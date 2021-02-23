@@ -1,6 +1,6 @@
 package org.github.felipegutierrez.evolve.advanced
 
-import org.github.felipegutierrez.explore.recap.AdvancedMonads.{AttemptMonad, LazyMonad, attemptRuntimeException}
+import org.github.felipegutierrez.evolve.advanced.AdvancedMonads.{AttemptMonad, LazyMonad, attemptRuntimeException}
 import org.scalatest.flatspec.AnyFlatSpec
 
 class AdvancedMonadsSpec extends AnyFlatSpec {

@@ -1,6 +1,6 @@
 package org.github.felipegutierrez.evolve.advanced
 
-import org.github.felipegutierrez.explore.recap.AdvancedPartialFunctions.{AdvancedPartialFunctions, myPartialFunction, myPartialFunctionChained, myPartialFunctionLifted}
+import org.github.felipegutierrez.evolve.advanced.AdvancedPartialFunctions.{AdvancedPartialFunctions, myPartialFunction, myPartialFunctionChained, myPartialFunctionLifted}
 import org.scalatest.flatspec.AnyFlatSpec
 
 class AdvancedPartialFunctionsSpec extends AnyFlatSpec {

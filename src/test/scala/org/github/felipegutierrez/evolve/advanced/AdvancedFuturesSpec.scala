@@ -8,7 +8,7 @@ import scala.util.Success
 
 class AdvancedFuturesSpec extends AnyFlatSpec {
 
-  import org.github.felipegutierrez.explore.recap.AdvancedFutures._
+  import org.github.felipegutierrez.evolve.advanced.AdvancedFutures._
 
   if (Runtime.getRuntime().availableProcessors() >= 4) {
     "a future with timeout" should

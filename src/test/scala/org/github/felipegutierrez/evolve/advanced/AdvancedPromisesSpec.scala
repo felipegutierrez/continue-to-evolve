@@ -1,6 +1,5 @@
 package org.github.felipegutierrez.evolve.advanced
 
-import org.github.felipegutierrez.explore.recap.AdvancedPromises
 import org.scalatest.flatspec.AnyFlatSpec
 
 import scala.util.{Failure, Success, Try}

@@ -1,6 +1,5 @@
 package org.github.felipegutierrez.evolve.advanced
 
-import org.github.felipegutierrez.explore.recap.AdvancedHighOrderFunction
 import org.scalatest.flatspec.AnyFlatSpec
 
 class AdvancedHighOrderFunctionSpec extends AnyFlatSpec {

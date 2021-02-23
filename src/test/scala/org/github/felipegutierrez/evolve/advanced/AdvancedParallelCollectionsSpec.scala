@@ -1,6 +1,6 @@
 package org.github.felipegutierrez.evolve.advanced
 
-import org.github.felipegutierrez.explore.recap.AdvancedParallelCollections.AdvancedParallelCollections
+import org.github.felipegutierrez.evolve.advanced.AdvancedParallelCollections.AdvancedParallelCollections
 import org.scalatest.flatspec.AnyFlatSpec
 
 class AdvancedParallelCollectionsSpec extends AnyFlatSpec {

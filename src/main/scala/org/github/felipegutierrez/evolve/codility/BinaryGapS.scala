@@ -1,4 +1,4 @@
-package org.github.felipegutierrez.explore.recap.codility
+package org.github.felipegutierrez.evolve.codility
 
 object BinaryGapS {
   def run(args: Array[String]): Unit = {

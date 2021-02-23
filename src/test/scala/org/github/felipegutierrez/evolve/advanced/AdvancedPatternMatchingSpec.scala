@@ -1,6 +1,6 @@
 package org.github.felipegutierrez.evolve.advanced
 
-import org.github.felipegutierrez.explore.recap.AdvancedPatternMatching._
+import org.github.felipegutierrez.evolve.advanced.AdvancedPatternMatching._
 import org.scalatest.flatspec.AnyFlatSpec
 
 class AdvancedPatternMatchingSpec extends AnyFlatSpec {
