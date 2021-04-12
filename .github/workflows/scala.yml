@@ -16,5 +16,5 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-    - name: Run tests
-      run: sbt test
+    - name: Compile project
+      run: sbt compile
