@@ -17,6 +17,4 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: Run tests
-      run: sbt coverage test
-    - name: Create coverage report
-      run: sbt coverageReport coveralls
+      run: sbt test
