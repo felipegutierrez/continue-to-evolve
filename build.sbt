@@ -38,7 +38,7 @@ libraryDependencies ++= Seq(
   "org.mockito" % "mockito-junit-jupiter" % "3.9.0" % Test,
 
   // Lombok to generate boilerplate code for Java
-  // "org.projectlombok" % "lombok" % lombokVersion,
+  "org.projectlombok" % "lombok" % lombokVersion,
 
   "org.apache.commons" % "commons-lang3" % "3.12.0",
 
