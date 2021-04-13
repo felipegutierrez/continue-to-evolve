@@ -15,8 +15,6 @@ public class ProductInfoService {
         List<ProductOption> productOptions =
                 Arrays.asList(new ProductOption(1, "64GB", "Black", 699.99),
                         new ProductOption(2, "128GB", "Black", 749.99));
-        return ProductInfo.builder().productId(productId)
-                .productOptions(productOptions)
-                .build();
+        return new ProductInfo(productId, productOptions);
     }
 }
