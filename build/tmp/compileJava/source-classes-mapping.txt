@@ -13,8 +13,8 @@ org/github/felipegutierrez/evolve/product/ProductInfoService.java
 org/github/felipegutierrez/evolve/product/domain/Product.java
  org.github.felipegutierrez.evolve.product.domain.Product
  org.github.felipegutierrez.evolve.product.domain.Product$ProductBuilder
-org/github/felipegutierrez/evolve/product/ProductServiceExecutor.java
- org.github.felipegutierrez.evolve.product.ProductServiceExecutor
+org/github/felipegutierrez/evolve/codility/CyclicRotation.java
+ org.github.felipegutierrez.evolve.codility.CyclicRotation
 org/github/felipegutierrez/evolve/codility/OddOccurrencesInArray.java
  org.github.felipegutierrez.evolve.codility.OddOccurrencesInArray
 org/github/felipegutierrez/evolve/codility/PermMissingElem.java
@@ -36,5 +36,5 @@ org/github/felipegutierrez/evolve/product/domain/ProductOption.java
 org/github/felipegutierrez/evolve/product/domain/ProductInfo.java
  org.github.felipegutierrez.evolve.product.domain.ProductInfo
  org.github.felipegutierrez.evolve.product.domain.ProductInfo$ProductInfoBuilder
-org/github/felipegutierrez/evolve/codility/CyclicRotation.java
- org.github.felipegutierrez.evolve.codility.CyclicRotation
+org/github/felipegutierrez/evolve/product/ProductServiceExecutor.java
+ org.github.felipegutierrez.evolve.product.ProductServiceExecutor
