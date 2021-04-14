@@ -5,9 +5,9 @@ import ru._
 
 object AdvancedReflection {
 
-  //  def main(args: Array[String]): Unit = {
-  //    run()
-  //  }
+//    def main(args: Array[String]): Unit = {
+//      run()
+//    }
 
   case class Person(name: String) {
     def sayMyName(): Unit = println(s"hi, my name is $name")

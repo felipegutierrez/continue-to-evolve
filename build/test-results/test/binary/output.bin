@@ -1,0 +1,27 @@
+2[ForkJoinPool-1-worker-5] - leftResult: [3 - Bob]
+3[ForkJoinPool-1-worker-3] - leftResult: [4 - Jill]
+=[ForkJoinPool-1-worker-3] - leftResult: [3 - Bob, 5 - Jamie]
+)[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 589
+)[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 1005
+5[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
+'[Test worker] - Total Time Taken : 506
+F[Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+)[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 506
+5[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
+([Test worker] - Total Time Taken : 2001
+F[Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+)[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 2001
+5[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
+([Test worker] - Total Time Taken : 2001
+F[Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+)[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 2001
+	5[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
+	'[Test worker] - Total Time Taken : 501
+	F[Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+	)[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+	Total time taken : 501

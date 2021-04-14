@@ -4,9 +4,9 @@ import scala.annotation.tailrec
 import scala.util.Try
 
 object BasicRecap {
-    def main(args: Array[String]): Unit = {
-      run()
-    }
+//    def main(args: Array[String]): Unit = {
+//      run()
+//    }
 
   def run(): Unit = {
     testForComprehensions(List(1, 2, 3, 4, 5), List("a", "b"), "-")

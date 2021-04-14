@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-04-14T09:51:40" hostname="stamina" time="5.129">
+  <properties/>
+  <testcase name="computeStreamParallel02()" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.516"/>
+  <testcase name="computeStream()" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="2.009"/>
+  <testcase name="[1] false" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="2.044"/>
+  <testcase name="[2] true" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.506"/>
+  <system-out><![CDATA[[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
+[Test worker] - Total Time Taken : 506
+[Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 506
+[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
+[Test worker] - Total Time Taken : 2001
+[Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 2001
+[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
+[Test worker] - Total Time Taken : 2001
+[Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 2001
+[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
+[Test worker] - Total Time Taken : 501
+[Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 501
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
