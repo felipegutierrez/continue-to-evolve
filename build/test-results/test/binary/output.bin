@@ -2,9 +2,9 @@
 3[ForkJoinPool-1-worker-3] - leftResult: [4 - Jill]
 =[ForkJoinPool-1-worker-3] - leftResult: [3 - Bob, 5 - Jamie]
 )[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
-Total time taken : 589
+Total time taken : 579
 )[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
-Total time taken : 1005
+Total time taken : 1007
 5[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
 '[Test worker] - Total Time Taken : 506
 F[Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]

@@ -11,6 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ForkJoinPoolExampleTest {
 
+    int availableCores = Runtime.getRuntime().availableProcessors();
+
     @Test
     public void computeForkJoin() {
         StopWatch stopWatch = new StopWatch();
@@ -26,6 +28,8 @@ public class ForkJoinPoolExampleTest {
         assertEquals(expectedList, resultList);
         long duration = stopWatch.getTime();
         System.out.println("Total time taken : " + duration);
-        assertTrue(duration < 1500);
+        if (availableCores >= 4) {
+            assertTrue(duration < 1500);
+        }
     }
 }

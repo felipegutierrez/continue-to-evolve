@@ -16,6 +16,7 @@ public class StreamsExampleTest {
     StreamsExample parallelismExample = new StreamsExample();
     List<String> actualList = List.of("Bob", "Jamie", "Jill", "Rick");
     List<String> expectedList = List.of("3 - Bob", "5 - Jamie", "4 - Jill", "4 - Rick");
+    int availableCores = Runtime.getRuntime().availableProcessors();
 
     @Test
     public void computeStream() {
@@ -54,12 +55,18 @@ public class StreamsExampleTest {
         assertEquals(expectedList, resultList);
         long duration = stopWatch.getTime();
         System.out.println("Total time taken : " + duration);
-        if (parallel) assertTrue(duration < 600);
-        else assertTrue(duration < 2500);
+        if (parallel) {
+            if (availableCores >= 4) {
+                assertTrue(duration < 600);
+            }
+        } else {
+            assertTrue(duration < 2500);
+        }
     }
 
     @Test
     public void computeStreamParallel02() {
+
         log("namesList : " + actualList);
         resetTimer();
         startTimer();
@@ -74,6 +81,8 @@ public class StreamsExampleTest {
         assertEquals(expectedList, resultList);
         long duration = stopWatch.getTime();
         System.out.println("Total time taken : " + duration);
-        assertTrue(duration < 600);
+        if (availableCores >= 4) {
+            assertTrue(duration < 600);
+        }
     }
 }
