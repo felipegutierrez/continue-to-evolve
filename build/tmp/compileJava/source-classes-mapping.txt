@@ -65,3 +65,5 @@ org/github/felipegutierrez/evolve/product/ProductServiceExecutor.java
  org.github.felipegutierrez.evolve.product.ProductServiceExecutor
 org/github/felipegutierrez/evolve/service/ProductService.java
  org.github.felipegutierrez.evolve.service.ProductService
+org/github/felipegutierrez/evolve/streams/ArrayListSpliteratorExample.java
+ org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExample

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.github.felipegutierrez.evolve.forkjoin.ForkJoinPoolExampleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-14T11:07:11" hostname="stamina" time="1.012">
-  <properties/>
-  <testcase name="computeForkJoin()" classname="org.github.felipegutierrez.evolve.forkjoin.ForkJoinPoolExampleTest" time="1.012"/>
-  <system-out><![CDATA[[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
-Total time taken : 1006
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

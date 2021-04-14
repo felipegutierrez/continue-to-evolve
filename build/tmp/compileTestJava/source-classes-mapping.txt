@@ -18,3 +18,5 @@ org/github/felipegutierrez/evolve/forkjoin/ForkJoinUsingRecursionTest.java
  org.github.felipegutierrez.evolve.forkjoin.ForkJoinUsingRecursionTest
 org/github/felipegutierrez/evolve/streams/StreamsExampleTest.java
  org.github.felipegutierrez.evolve.streams.StreamsExampleTest
+org/github/felipegutierrez/evolve/streams/ArrayListSpliteratorExampleTest.java
+ org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest
