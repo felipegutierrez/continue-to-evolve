@@ -1,6 +1,8 @@
 package org.github.felipegutierrez.evolve.streams;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.List;
 
@@ -35,13 +37,14 @@ public class StreamsExampleTest {
         assertTrue(duration < 2500);
     }
 
-    @Test
-    public void computeStreamParallel01() {
+    @ParameterizedTest
+    @ValueSource(booleans = {false, true})
+    public void computeStream(boolean parallel) {
         log("namesList : " + actualList);
         resetTimer();
         startTimer();
 
-        List<String> resultList = parallelismExample.stringTransformParallel01(actualList);
+        List<String> resultList = parallelismExample.stringTransform(actualList, parallel);
         timeTaken();
         log("resultList : " + resultList);
 
@@ -51,7 +54,8 @@ public class StreamsExampleTest {
         assertEquals(expectedList, resultList);
         long duration = stopWatch.getTime();
         System.out.println("Total time taken : " + duration);
-        assertTrue(duration < 600);
+        if (parallel) assertTrue(duration < 600);
+        else assertTrue(duration < 2500);
     }
 
     @Test

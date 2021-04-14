@@ -2,6 +2,7 @@ package org.github.felipegutierrez.evolve.streams;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static org.github.felipegutierrez.evolve.util.CommonUtil.*;
 import static org.github.felipegutierrez.evolve.util.LoggerUtil.log;
@@ -21,22 +22,25 @@ public class StreamsExample {
 
     public List<String> stringTransform(List<String> namesList) {
         return namesList
-                .stream()
+                .stream() // sequential
                 .map(this::transform)
                 .collect(Collectors.toList());
     }
 
-    public List<String> stringTransformParallel01(List<String> namesList) {
-        return namesList
-                .stream()
+    public List<String> stringTransform(List<String> namesList, boolean parallel) {
+        Stream<String> namesStream = namesList.stream(); // sequential
+        if (parallel) {
+            // turn the pipeline chain to execute in parallel
+            namesStream.parallel();
+        }
+        return namesStream
                 .map(this::transform)
-                .parallel()
                 .collect(Collectors.toList());
     }
 
     public List<String> stringTransformParallel02(List<String> namesList) {
         return namesList
-                .parallelStream()
+                .parallelStream() // turn the pipeline chain to execute in parallel
                 .map(this::transform)
                 .collect(Collectors.toList());
     }
