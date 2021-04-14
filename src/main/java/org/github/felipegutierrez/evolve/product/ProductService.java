@@ -1,8 +1,8 @@
 package org.github.felipegutierrez.evolve.product;
 
-import org.github.felipegutierrez.evolve.product.domain.Product;
-import org.github.felipegutierrez.evolve.product.domain.ProductInfo;
-import org.github.felipegutierrez.evolve.product.domain.Review;
+import org.github.felipegutierrez.evolve.domain.Product;
+import org.github.felipegutierrez.evolve.domain.ProductInfo;
+import org.github.felipegutierrez.evolve.domain.Review;
 
 import static org.github.felipegutierrez.evolve.util.CommonUtil.stopWatch;
 import static org.github.felipegutierrez.evolve.util.LoggerUtil.log;

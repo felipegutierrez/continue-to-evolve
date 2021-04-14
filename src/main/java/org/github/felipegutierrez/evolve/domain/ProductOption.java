@@ -1,4 +1,4 @@
-package org.github.felipegutierrez.evolve.product.domain;
+package org.github.felipegutierrez.evolve.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

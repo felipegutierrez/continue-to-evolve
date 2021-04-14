@@ -1,6 +1,6 @@
 package org.github.felipegutierrez.evolve.product;
 
-import org.github.felipegutierrez.evolve.product.domain.Review;
+import org.github.felipegutierrez.evolve.domain.Review;
 
 import static org.github.felipegutierrez.evolve.util.CommonUtil.delay;
 

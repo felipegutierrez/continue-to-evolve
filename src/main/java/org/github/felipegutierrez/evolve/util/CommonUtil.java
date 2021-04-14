@@ -34,10 +34,6 @@ public class CommonUtil {
         LoggerUtil.log("Total Time Taken : " + stopWatch.getTime());
     }
 
-    public static void stopWatchReset() {
-        stopWatch.reset();
-    }
-
     public static int noOfCores() {
         return Runtime.getRuntime().availableProcessors();
     }
