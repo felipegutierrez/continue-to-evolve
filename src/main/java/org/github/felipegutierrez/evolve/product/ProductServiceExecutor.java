@@ -4,10 +4,7 @@ import org.github.felipegutierrez.evolve.product.domain.Product;
 import org.github.felipegutierrez.evolve.product.domain.ProductInfo;
 import org.github.felipegutierrez.evolve.product.domain.Review;
 
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 import static org.github.felipegutierrez.evolve.product.util.CommonUtil.stopWatch;
 import static org.github.felipegutierrez.evolve.product.util.LoggerUtil.log;
@@ -22,7 +19,7 @@ public class ProductServiceExecutor {
         this.reviewService = reviewService;
     }
 
-    public static void main(String[] args) throws ExecutionException, InterruptedException {
+    public static void main(String[] args) throws ExecutionException, InterruptedException, TimeoutException {
 
         ProductInfoService productInfoService = new ProductInfoService();
         ReviewService reviewService = new ReviewService();
@@ -31,16 +28,18 @@ public class ProductServiceExecutor {
         Product product = productService.retrieveProductDetails(productId);
         log("Product is " + product);
 
+        executorService.shutdown();
     }
 
-    public Product retrieveProductDetails(String productId) throws ExecutionException, InterruptedException {
+    public Product retrieveProductDetails(String productId) throws ExecutionException, InterruptedException, TimeoutException {
         stopWatch.start();
 
         Future<ProductInfo> productInfoFuture = executorService.submit(() -> productInfoService.retrieveProductInfo(productId));
         Future<Review> reviewFuture = executorService.submit(() -> reviewService.retrieveReviews(productId));
 
-        ProductInfo productInfo = productInfoFuture.get();
-        Review review = reviewFuture.get();
+        // ProductInfo productInfo = productInfoFuture.get();
+        ProductInfo productInfo = productInfoFuture.get(2, TimeUnit.SECONDS);
+        Review review = reviewFuture.get(2, TimeUnit.SECONDS);
 
         stopWatch.stop();
         log("Total Time Taken : " + stopWatch.getTime());
