@@ -1,5 +1,6 @@
 package org.github.felipegutierrez.evolve.streams;
 
+import org.github.felipegutierrez.evolve.util.Operation;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -88,8 +89,8 @@ public class StreamsExampleTest {
 
     @ParameterizedTest
     @ValueSource(ints = {0, 1, 2})
-    void reduce(int identity) {
-        Integer result = parallelismExample.reduceInParallel(List.of(1, 2, 3, 4, 5, 6, 7, 8), identity);
+    void reduceSum(int identity) {
+        Integer result = parallelismExample.reduceInParallel(List.of(1, 2, 3, 4, 5, 6, 7, 8), identity, Operation.SUM);
         if (identity == 0) {
             int expected = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8; // 36
             assertEquals(expected, result);
@@ -98,6 +99,22 @@ public class StreamsExampleTest {
             assertEquals(expected, result);
         } else if (identity == 2) {
             int expected = 1 + 2 + 2 + 2 + 3 + 2 + 4 + 2 + 5 + 2 + 6 + 2 + 7 + 2 + 8 + 2; // 52
+            assertEquals(expected, result);
+        }
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {0, 1, 2})
+    void reduceMulti(int identity) {
+        Integer result = parallelismExample.reduceInParallel(List.of(1, 2, 3, 4), identity, Operation.MULTI);
+        if (identity == 0) {
+            int expected = 1 * 0 * 2 * 0 * 3 * 0 * 4; // 0
+            assertEquals(expected, result);
+        } else if (identity == 1) {
+            int expected = 1 * 1 * 2 * 1 * 3 * 1 * 4 * 1; // 24
+            assertEquals(expected, result);
+        } else if (identity == 2) {
+            int expected = 1 * 2 * 2 * 2 * 3 * 2 * 4 * 2; // 384
             assertEquals(expected, result);
         }
     }

@@ -1,11 +1,15 @@
 package org.github.felipegutierrez.evolve.streams;
 
+import org.github.felipegutierrez.evolve.util.Operation;
+
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static org.github.felipegutierrez.evolve.util.CommonUtil.*;
 import static org.github.felipegutierrez.evolve.util.LoggerUtil.log;
+import static org.github.felipegutierrez.evolve.util.Operation.MULTI;
+import static org.github.felipegutierrez.evolve.util.Operation.SUM;
 
 public class StreamsExample {
 
@@ -45,10 +49,18 @@ public class StreamsExample {
                 .collect(Collectors.toList());
     }
 
-    public Integer reduceInParallel(List<Integer> inputList, int identity) {
+    public Integer reduceInParallel(List<Integer> inputList, int identity, Operation operation) {
         return inputList
                 .parallelStream() // turn the pipeline chain to execute in parallel
-                .reduce(identity, (x, y) -> x + y);
+                .reduce(identity, (x, y) -> {
+                    if (operation == SUM) {
+                        return x + y;
+                    } else if (operation == MULTI) {
+                        return x * y;
+                    } else {
+                        return x + y;
+                    }
+                });
     }
 
     private String transform(String name) {
