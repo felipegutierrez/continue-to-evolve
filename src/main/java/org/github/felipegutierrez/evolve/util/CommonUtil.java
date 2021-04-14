@@ -1,6 +1,6 @@
 package org.github.felipegutierrez.evolve.util;
 
-import org.apache.commons.lang3.time.*;
+import org.apache.commons.lang3.time.StopWatch;
 
 import static java.lang.Thread.sleep;
 
@@ -8,13 +8,12 @@ public class CommonUtil {
 
     public static StopWatch stopWatch = new StopWatch();
 
-    public static void delay(long delayMilliSeconds)  {
-        try{
+    public static void delay(long delayMilliSeconds) {
+        try {
             sleep(delayMilliSeconds);
-        }catch (Exception e){
+        } catch (Exception e) {
             LoggerUtil.log("Exception is :" + e.getMessage());
         }
-
     }
 
     public static String transForm(String s) {
@@ -22,20 +21,24 @@ public class CommonUtil {
         return s.toUpperCase();
     }
 
-    public static void startTimer(){
-        stopWatch.start();
-    }
-
-    public static void timeTaken(){
-        stopWatch.stop();
-        LoggerUtil.log("Total Time Taken : " +stopWatch.getTime());
-    }
-
-    public static void stopWatchReset(){
+    public static void resetTimer() {
         stopWatch.reset();
     }
 
-    public static  int noOfCores(){
+    public static void startTimer() {
+        stopWatch.start();
+    }
+
+    public static void timeTaken() {
+        stopWatch.stop();
+        LoggerUtil.log("Total Time Taken : " + stopWatch.getTime());
+    }
+
+    public static void stopWatchReset() {
+        stopWatch.reset();
+    }
+
+    public static int noOfCores() {
         return Runtime.getRuntime().availableProcessors();
     }
 }
