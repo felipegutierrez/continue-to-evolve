@@ -2,7 +2,7 @@ package org.github.felipegutierrez.evolve.product;
 
 import org.github.felipegutierrez.evolve.product.domain.Review;
 
-import static org.github.felipegutierrez.evolve.product.util.CommonUtil.delay;
+import static org.github.felipegutierrez.evolve.util.CommonUtil.delay;
 
 public class ReviewService {
 

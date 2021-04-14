@@ -1,4 +1,4 @@
-target/
+target*
 .idea*
 .project*
 .classpath*
@@ -7,4 +7,8 @@ ddata**
 
 download/**
 
+.gradle
+.gradle/*
+build
+build/*
 
