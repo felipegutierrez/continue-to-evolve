@@ -1,0 +1,18 @@
+org/github/felipegutierrez/evolve/forkjoin/ForkJoinPoolExampleTest.java
+ org.github.felipegutierrez.evolve.forkjoin.ForkJoinPoolExampleTest
+org/github/felipegutierrez/evolve/codility/CyclicRotationTest.java
+ org.github.felipegutierrez.evolve.codility.CyclicRotationTest
+org/github/felipegutierrez/evolve/forkjoin/ForkJoinUsingRecursionTest.java
+ org.github.felipegutierrez.evolve.forkjoin.ForkJoinUsingRecursionTest
+org/github/felipegutierrez/evolve/FactorialCalculatorFutureDemoTest.java
+ org.github.felipegutierrez.evolve.FactorialCalculatorFutureDemoTest
+org/github/felipegutierrez/evolve/streams/StreamsExampleTest.java
+ org.github.felipegutierrez.evolve.streams.StreamsExampleTest
+org/github/felipegutierrez/evolve/codility/PermMissingElemTest.java
+ org.github.felipegutierrez.evolve.codility.PermMissingElemTest
+org/github/felipegutierrez/evolve/codility/BinaryGapTest.java
+ org.github.felipegutierrez.evolve.codility.BinaryGapTest
+org/github/felipegutierrez/evolve/codility/OddOccurrencesInArrayTest.java
+ org.github.felipegutierrez.evolve.codility.OddOccurrencesInArrayTest
+org/github/felipegutierrez/evolve/codility/FrogJmpTest.java
+ org.github.felipegutierrez.evolve.codility.FrogJmpTest

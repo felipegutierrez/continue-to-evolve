@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'scala'
     id 'idea' // optional (to generate IntelliJ IDEA project files)
 }
 
@@ -30,6 +31,15 @@ dependencies {
 
     // StopWatch
     implementation('org.apache.commons:commons-lang3:3.0')
+
+    // Scala
+    implementation 'org.scala-lang:scala-library:2.12.7'
+    implementation 'org.scalatest:scalatest_2.12:3.0.0'
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+    // testImplementation 'org.mockito:mockito-scala_2.12:1.16.34'
+    implementation 'com.typesafe.scala-logging:scala-logging_2.12:3.9.3'
+    implementation 'org.scalatestplus:junit-4-13_2.10:3.2.2.0'
+
 
     //junit5-dependencies
     testImplementation('org.junit.jupiter:junit-jupiter:5.5.1')
