@@ -1,4 +1,4 @@
-package org.github.felipegutierrez.evolve.product.util;
+package org.github.felipegutierrez.evolve.util;
 
 public class LoggerUtil {
     public static void log(String message) {

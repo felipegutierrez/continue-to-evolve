@@ -6,8 +6,8 @@ import org.github.felipegutierrez.evolve.product.domain.Review;
 
 import java.util.concurrent.*;
 
-import static org.github.felipegutierrez.evolve.product.util.CommonUtil.stopWatch;
-import static org.github.felipegutierrez.evolve.product.util.LoggerUtil.log;
+import static org.github.felipegutierrez.evolve.util.CommonUtil.stopWatch;
+import static org.github.felipegutierrez.evolve.util.LoggerUtil.log;
 
 public class ProductServiceExecutor {
     static ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());

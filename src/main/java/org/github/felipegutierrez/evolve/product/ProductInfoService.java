@@ -6,7 +6,7 @@ import org.github.felipegutierrez.evolve.product.domain.ProductOption;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.github.felipegutierrez.evolve.product.util.CommonUtil.delay;
+import static org.github.felipegutierrez.evolve.util.CommonUtil.delay;
 
 public class ProductInfoService {
 

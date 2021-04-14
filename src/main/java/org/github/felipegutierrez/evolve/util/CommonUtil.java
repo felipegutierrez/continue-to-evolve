@@ -1,9 +1,8 @@
-package org.github.felipegutierrez.evolve.product.util;
+package org.github.felipegutierrez.evolve.util;
 
 import org.apache.commons.lang3.time.*;
 
 import static java.lang.Thread.sleep;
-import static org.github.felipegutierrez.evolve.product.util.LoggerUtil.log;
 
 public class CommonUtil {
 
@@ -13,7 +12,7 @@ public class CommonUtil {
         try{
             sleep(delayMilliSeconds);
         }catch (Exception e){
-            log("Exception is :" + e.getMessage());
+            LoggerUtil.log("Exception is :" + e.getMessage());
         }
 
     }
@@ -29,7 +28,7 @@ public class CommonUtil {
 
     public static void timeTaken(){
         stopWatch.stop();
-        log("Total Time Taken : " +stopWatch.getTime());
+        LoggerUtil.log("Total Time Taken : " +stopWatch.getTime());
     }
 
     public static void stopWatchReset(){
