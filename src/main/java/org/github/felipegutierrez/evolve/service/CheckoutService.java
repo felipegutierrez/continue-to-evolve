@@ -44,13 +44,13 @@ public class CheckoutService {
         }
 
         //double finalRate = calculateFinalPrice(cart);
-        double finalRate = calculateFinalPrice_reduce(cart);
+        double finalRate = calculateFinalPriceReduce(cart);
         log("Checkout Complete and the final rate is " + finalRate);
 
         return new CheckoutResponse(CheckoutStatus.SUCCESS, finalRate);
     }
 
-    private double calculateFinalPrice(Cart cart) {
+    private double calculateFinalPriceCollect(Cart cart) {
         return cart.getCartItemList()
                 .parallelStream()
                 .map(cartItem -> cartItem.getQuantity() * cartItem.getRate())
@@ -59,11 +59,11 @@ public class CheckoutService {
         //.sum();
     }
 
-    private double calculateFinalPrice_reduce(Cart cart) {
+    private double calculateFinalPriceReduce(Cart cart) {
         return cart.getCartItemList()
                 .parallelStream()
                 .map(cartItem -> cartItem.getQuantity() * cartItem.getRate())
-                //.reduce(0.0, (x,y)->x+y);
+                // .reduce(0.0, (x, y) -> x + y);
                 .reduce(0.0, Double::sum);
         //Identity for multiplication is 1
         //Identity for addition  is 0

@@ -45,6 +45,12 @@ public class StreamsExample {
                 .collect(Collectors.toList());
     }
 
+    public Integer reduceInParallel(List<Integer> inputList, int identity) {
+        return inputList
+                .parallelStream() // turn the pipeline chain to execute in parallel
+                .reduce(identity, (x, y) -> x + y);
+    }
+
     private String transform(String name) {
         delay(500);
         //log("Transforming : " + name);

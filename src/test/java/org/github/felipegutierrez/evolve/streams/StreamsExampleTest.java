@@ -85,4 +85,20 @@ public class StreamsExampleTest {
             assertTrue(duration < 600);
         }
     }
+
+    @ParameterizedTest
+    @ValueSource(ints = {0, 1, 2})
+    void reduce(int identity) {
+        Integer result = parallelismExample.reduceInParallel(List.of(1, 2, 3, 4, 5, 6, 7, 8), identity);
+        if (identity == 0) {
+            int expected = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8; // 36
+            assertEquals(expected, result);
+        } else if (identity == 1) {
+            int expected = 1 + 1 + 2 + 1 + 3 + 1 + 4 + 1 + 5 + 1 + 6 + 1 + 7 + 1 + 8 + 1; // 44
+            assertEquals(expected, result);
+        } else if (identity == 2) {
+            int expected = 1 + 2 + 2 + 2 + 3 + 2 + 4 + 2 + 5 + 2 + 6 + 2 + 7 + 2 + 8 + 2; // 52
+            assertEquals(expected, result);
+        }
+    }
 }
