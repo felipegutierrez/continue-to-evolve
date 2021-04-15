@@ -19,10 +19,23 @@ class ProductServiceCompletableFutureTest {
 
     @Test
     @Timeout(value = 1200, unit = TimeUnit.MILLISECONDS)
-    void retrieveProductDetails() {
+    void retrieveProductDetailsClient() {
 
         String productId = "ABC123";
-        Product product = productServiceCompletableFuture.retrieveProductDetails(productId);
+        Product product = productServiceCompletableFuture.retrieveProductDetailsClient(productId);
+
+        assertNotNull(product);
+        assertTrue(product.getProductInfo().getProductOptions().size() > 0);
+        assertNotNull(product.getReview());
+    }
+
+    @Test
+    @Timeout(value = 1200, unit = TimeUnit.MILLISECONDS)
+    void retrieveProductDetailsServer() {
+
+        String productId = "ABC123";
+        Product product = productServiceCompletableFuture.retrieveProductDetailsServer(productId)
+                .join();
 
         assertNotNull(product);
         assertTrue(product.getProductInfo().getProductOptions().size() > 0);

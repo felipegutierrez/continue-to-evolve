@@ -20,7 +20,7 @@ public class ProductServiceCompletableFuture {
         this.reviewService = reviewService;
     }
 
-    public Product retrieveProductDetails(String productId) {
+    public Product retrieveProductDetailsClient(String productId) {
         stopWatch.reset();
         stopWatch.start();
 
@@ -31,6 +31,23 @@ public class ProductServiceCompletableFuture {
         Product product = productInfoCompletableFuture
                 .thenCombine(reviewCompletableFuture, (productInfo, review) -> new Product(productId, productInfo, review))
                 .join(); // block the thread
+
+        stopWatch.stop();
+        log("Total Time Taken : " + stopWatch.getTime());
+        return product;
+    }
+
+    public CompletableFuture<Product> retrieveProductDetailsServer(String productId) {
+        stopWatch.reset();
+        stopWatch.start();
+
+        CompletableFuture<ProductInfo> productInfoCompletableFuture = CompletableFuture
+                .supplyAsync(() -> productInfoService.retrieveProductInfo(productId)); // non-blocking
+        CompletableFuture<Review> reviewCompletableFuture = CompletableFuture
+                .supplyAsync(() -> reviewService.retrieveReviews(productId)); // non-blocking
+        CompletableFuture<Product> product = productInfoCompletableFuture
+                .thenCombine(reviewCompletableFuture,
+                        (productInfo, review) -> new Product(productId, productInfo, review)); // non-blocking
 
         stopWatch.stop();
         log("Total Time Taken : " + stopWatch.getTime());
