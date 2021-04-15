@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.github.felipegutierrez.evolve.forkjoin.ForkJoinPoolExampleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-15T08:55:55" hostname="stamina" time="1.053">
+<testsuite name="org.github.felipegutierrez.evolve.forkjoin.ForkJoinPoolExampleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-15T12:03:05" hostname="stamina" time="1.011">
   <properties/>
-  <testcase name="computeForkJoin()" classname="org.github.felipegutierrez.evolve.forkjoin.ForkJoinPoolExampleTest" time="1.053"/>
+  <testcase name="computeForkJoin()" classname="org.github.felipegutierrez.evolve.forkjoin.ForkJoinPoolExampleTest" time="1.011"/>
   <system-out><![CDATA[[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
-Total time taken : 1019
+Total time taken : 1005
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

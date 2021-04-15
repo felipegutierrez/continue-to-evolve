@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-04-15T08:55:47" hostname="stamina" time="7.219">
+<testsuite name="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-04-15T12:02:49" hostname="stamina" time="9.314">
   <properties/>
-  <testcase name="helloWorldCombinedUpperCase()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="1.145"/>
-  <testcase name="helloWorld()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="1.009"/>
-  <testcase name="helloWorldUpperCaseWithLength()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="1.024"/>
-  <testcase name="helloWorldCombined4UpperCase()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="2.009"/>
+  <testcase name="helloWorldCombinedUpperCase()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="1.195"/>
+  <testcase name="helloWorld()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="1.008"/>
+  <testcase name="helloWorldUpperCaseWithLength()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="1.022"/>
+  <testcase name="helloWorldCombined4UpperCase()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="1.029"/>
+  <testcase name="helloWorldCombined4UpperCaseWithTwoException()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="1.008"/>
+  <testcase name="helloWorldCombined4UpperCaseWithException()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="1.007"/>
+  <testcase name="helloWorldCombinedUpperCaseWithException()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="1.006"/>
   <testcase name="helloWorldUpperCaseWithCompose()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="2.022"/>
-  <system-out><![CDATA[[ForkJoinPool.commonPool-worker-3] - inside hello
+  <system-out><![CDATA[[ForkJoinPool.commonPool-worker-5] - inside hello
+[ForkJoinPool.commonPool-worker-7] - inside world
+[ForkJoinPool.commonPool-worker-7] - inside helloWorld
+[ForkJoinPool.commonPool-worker-7] - inside helloWorld
+[ForkJoinPool.commonPool-worker-7] - Hello is: HELLO
+[ForkJoinPool.commonPool-worker-3] - inside world
+[ForkJoinPool.commonPool-worker-7] - Hello is: null
+[ForkJoinPool.commonPool-worker-7] - Hello Exception is: java.lang.RuntimeException: this is a generated exception!
+[ForkJoinPool.commonPool-worker-7] - World Exception is: java.lang.RuntimeException: this is a generated exception!
+[ForkJoinPool.commonPool-worker-3] - Hello is: null
+[ForkJoinPool.commonPool-worker-3] - Hello Exception is: java.lang.RuntimeException: this is a generated exception!
 [ForkJoinPool.commonPool-worker-5] - inside world
-[ForkJoinPool.commonPool-worker-3] - inside helloWorld
-[ForkJoinPool.commonPool-worker-3] - inside helloWorld
-[ForkJoinPool.commonPool-worker-3] - inside hello
+[ForkJoinPool.commonPool-worker-3] - Hello Exception is: java.lang.RuntimeException: this is a generated exception!
 [ForkJoinPool.commonPool-worker-5] - inside world
-[ForkJoinPool.commonPool-worker-3] - inside hello
-timeElapsed: 2007
+[ForkJoinPool.commonPool-worker-5] - inside hello
+timeElapsed: 2006
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

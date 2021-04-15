@@ -71,5 +71,9 @@ org/github/felipegutierrez/evolve/streams/StreamsExample.java
  org.github.felipegutierrez.evolve.streams.StreamsExample
 org/github/felipegutierrez/evolve/service/HelloWorldService.java
  org.github.felipegutierrez.evolve.service.HelloWorldService
+org/github/felipegutierrez/evolve/completablefuture/ProductServiceCompletableFuture.java
+ org.github.felipegutierrez.evolve.completablefuture.ProductServiceCompletableFuture
+org/github/felipegutierrez/evolve/service/InventoryService.java
+ org.github.felipegutierrez.evolve.service.InventoryService
 org/github/felipegutierrez/evolve/completablefuture/CompletableFutureHelloWorld.java
  org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorld

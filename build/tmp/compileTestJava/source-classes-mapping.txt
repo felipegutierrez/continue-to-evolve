@@ -20,5 +20,7 @@ org/github/felipegutierrez/evolve/service/CheckoutServiceTest.java
  org.github.felipegutierrez.evolve.service.CheckoutServiceTest
 org/github/felipegutierrez/evolve/streams/StreamsExampleTest.java
  org.github.felipegutierrez.evolve.streams.StreamsExampleTest
+org/github/felipegutierrez/evolve/completablefuture/ProductServiceCompletableFutureTest.java
+ org.github.felipegutierrez.evolve.completablefuture.ProductServiceCompletableFutureTest
 org/github/felipegutierrez/evolve/completablefuture/CompletableFutureHelloWorldTest.java
  org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest

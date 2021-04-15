@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.github.felipegutierrez.evolve.completablefuture.ProductServiceCompletableFutureTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-04-15T12:02:59" hostname="stamina" time="5.533">
+  <properties/>
+  <testcase name="retrieveProductDetailsClientWithInventoryAsync()" classname="org.github.felipegutierrez.evolve.completablefuture.ProductServiceCompletableFutureTest" time="1.51"/>
+  <testcase name="retrieveProductDetailsClientWithInventory()" classname="org.github.felipegutierrez.evolve.completablefuture.ProductServiceCompletableFutureTest" time="2.008"/>
+  <testcase name="retrieveProductDetailsClient()" classname="org.github.felipegutierrez.evolve.completablefuture.ProductServiceCompletableFutureTest" time="1.005"/>
+  <testcase name="retrieveProductDetailsServer()" classname="org.github.felipegutierrez.evolve.completablefuture.ProductServiceCompletableFutureTest" time="1.003"/>
+  <system-out><![CDATA[[Test worker] - Total Time Taken : 1505
+[Test worker] - Total Time Taken : 2002
+[Test worker] - Total Time Taken : 1001
+[Test worker] - Total Time Taken : 2
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

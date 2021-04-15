@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-04-15T08:55:56" hostname="stamina" time="5.209">
+<testsuite name="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-04-15T12:03:06" hostname="stamina" time="5.146">
   <properties/>
   <testcase name="computeStreamParallel02()" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.512"/>
-  <testcase name="computeStream()" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="2.009"/>
-  <testcase name="[1] false" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="2.057"/>
-  <testcase name="[2] true" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.506"/>
-  <testcase name="[1] 0" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.026"/>
-  <testcase name="[2] 1" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.002"/>
+  <testcase name="computeStream()" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="2.008"/>
+  <testcase name="[1] false" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="2.039"/>
+  <testcase name="[2] true" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.505"/>
+  <testcase name="[1] 0" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.004"/>
+  <testcase name="[2] 1" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.001"/>
   <testcase name="[3] 2" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.002"/>
   <testcase name="[1] 0" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.002"/>
   <testcase name="[2] 1" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.002"/>
-  <testcase name="[3] 2" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.001"/>
+  <testcase name="[3] 2" classname="org.github.felipegutierrez.evolve.streams.StreamsExampleTest" time="0.002"/>
   <system-out><![CDATA[[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
-[Test worker] - Total Time Taken : 504
+[Test worker] - Total Time Taken : 503
 [Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
 [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
-Total time taken : 504
+Total time taken : 503
 [Test worker] - namesList : [Bob, Jamie, Jill, Rick]
 [Test worker] - Total Time Taken : 2001
 [Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
