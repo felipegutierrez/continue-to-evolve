@@ -156,4 +156,20 @@ class CompletableFutureHelloWorldTest {
         System.out.println("timeElapsed: " + timeElapsed);
         assertTrue(timeElapsed > 2000);
     }
+
+    @Test
+    @Timeout(value = 2200, unit = TimeUnit.MILLISECONDS)
+    void helloWorldCombined4UpperCaseWithCustomThreadPool() {
+        when(helloWorldService.hello()).thenReturn("hello");
+        when(helloWorldService.world()).thenCallRealMethod();
+
+        CompletableFuture<String> completableFuture = completableFutureHelloWorld.helloWorldCombined4UpperCaseWithCustomThreadPool();
+        completableFuture
+                .thenAccept(value -> assertEquals("HELLO WORLD! HI COMPLETABLEFUTURE! BYE!", value))
+                .join();
+        completableFuture
+                .thenAccept(value -> assertNotEquals("HELLO world! HI COMPLETABLEFUTURE! BYE!", value))
+                .join();
+    }
+
 }
