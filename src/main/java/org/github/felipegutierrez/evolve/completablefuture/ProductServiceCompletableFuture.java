@@ -100,12 +100,26 @@ public class ProductServiceCompletableFuture {
 
         CompletableFuture<ProductInfo> productInfoCompletableFuture = CompletableFuture
                 .supplyAsync(() -> productInfoService.retrieveProductInfo(productId))
+                .exceptionally(e -> {
+                    log("Handled exception in productInfoService.retrieveProductInfo(" + productId + ")");
+                    return ProductInfo.builder()
+                            .productId(productId)
+                            .productOptions(List.of())
+                            .build();
+                })
                 .thenApply(productInfo -> {
                     productInfo.setProductOptions(updateInventoryNestedCallAsync(productInfo));
                     return productInfo;
                 });
         CompletableFuture<Review> reviewCompletableFuture = CompletableFuture
-                .supplyAsync(() -> reviewService.retrieveReviews(productId)); // non-blocking
+                .supplyAsync(() -> reviewService.retrieveReviews(productId)) // non-blocking
+                .exceptionally(e -> {
+                    log("Handled exception in reviewService.retrieveReviews(" + productId + ")");
+                    return Review.builder()
+                            .noOfReviews(0)
+                            .overallRating(0.0)
+                            .build();
+                });
         Product product = productInfoCompletableFuture
                 .thenCombine(reviewCompletableFuture, (productInfo, review) -> new Product(productId, productInfo, review))
                 .join(); // block the thread
@@ -121,6 +135,10 @@ public class ProductServiceCompletableFuture {
                 .map(productOption -> {
                     return CompletableFuture
                             .supplyAsync(() -> inventoryService.retrieveInventory(productOption))
+                            .exceptionally(e -> {
+                                log("Handled exception in inventoryService.retrieveInventory(" + productOption + ")");
+                                return Inventory.builder().count(0).build();
+                            })
                             .thenApply(inventory -> {
                                 productOption.setInventory(inventory);
                                 return productOption;
