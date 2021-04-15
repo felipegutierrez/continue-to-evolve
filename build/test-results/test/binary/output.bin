@@ -1,9 +1,0 @@
-*[pool-1-thread-1] - thenApply toUpperCase
-$[pool-1-thread-1] - Hello is: HELLO
-*[pool-1-thread-3] - thenApply toUpperCase
-*[pool-1-thread-4] - thenApply toUpperCase
-![pool-1-thread-2] - inside world
-*[pool-1-thread-2] - thenApply toUpperCase
-+[pool-1-thread-4] - thenCombineAsync World
-<[pool-1-thread-4] - thenCombineAsync Hi (previous, current)
-=[pool-1-thread-4] - thenCombineAsync Bye (previous, current)

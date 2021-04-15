@@ -1,9 +1,0 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/felipe/workspace-idea/continue-to-evolve/src/main/scala/org/github/felipegutierrez/evolve/advanced/AdvancedPromises.scala:20:5: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following input: Some(Failure((x: Throwable forSome x not in Exception)))[0m
-[0m[[0m[33mwarn[0m] [0m[0m    result match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/felipe/workspace-idea/continue-to-evolve/src/main/scala/org/github/felipegutierrez/evolve/advanced/AdvancedTypeClasses.scala:49:18: comparing values of types org.github.felipegutierrez.evolve.advanced.AdvancedTypeClasses.User and Int using `==' will always yield false[0m
-[0m[[0m[33mwarn[0m] [0m[0m    println(john == 43)[0m
-[0m[[0m[33mwarn[0m] [0m[0m                 ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mthere were three feature warnings; re-run with -feature for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m
