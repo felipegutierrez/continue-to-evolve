@@ -23,4 +23,18 @@ class CompletableFutureHelloWorldTest {
                 .thenAccept(value -> assertNotEquals("HELLO world", value))
                 .join();
     }
+
+    @Test
+    void helloWorldUpperCaseWithLength() {
+        CompletableFuture<String> completableFuture = completableFutureHelloWorld.helloWorldUpperCaseWithLength();
+        completableFuture
+                .thenAccept(value -> assertEquals("11 - HELLO WORLD", value))
+                .join();
+        completableFuture
+                .thenAccept(value -> assertNotEquals("11 - HELLO world", value))
+                .join();
+        completableFuture
+                .thenAccept(value -> assertNotEquals("10 - HELLO WORLD", value))
+                .join();
+    }
 }

@@ -17,4 +17,11 @@ public class CompletableFutureHelloWorld {
                 .supplyAsync(helloWorldService::helloWorld)
                 .thenApply(String::toUpperCase);
     }
+
+    public CompletableFuture<String> helloWorldUpperCaseWithLength() {
+        return CompletableFuture
+                .supplyAsync(helloWorldService::helloWorld)
+                .thenApply(String::toUpperCase)
+                .thenApply(value -> value.length() + " - " + value);
+    }
 }
