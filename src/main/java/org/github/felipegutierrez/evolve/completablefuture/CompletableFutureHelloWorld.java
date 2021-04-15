@@ -5,6 +5,8 @@ import org.github.felipegutierrez.evolve.service.HelloWorldService;
 
 import java.util.concurrent.CompletableFuture;
 
+import static org.github.felipegutierrez.evolve.util.CommonUtil.delay;
+
 public class CompletableFutureHelloWorld {
 
     private final HelloWorldService helloWorldService;
@@ -39,6 +41,31 @@ public class CompletableFutureHelloWorld {
                 .thenApply(String::toUpperCase);
         CompletableFuture<String> completableFutureCombined = completableFutureHello
                 .thenCombine(completableFutureWorld, (hello, world) -> hello + world);
+
+        stopWatch.stop();
+
+        return completableFutureCombined;
+    }
+
+    public CompletableFuture<String> helloWorldCombined3UpperCase() {
+        stopWatch.reset();
+        stopWatch.start();
+
+        CompletableFuture<String> completableFutureHello = CompletableFuture
+                .supplyAsync(helloWorldService::hello)
+                .thenApply(String::toUpperCase);
+        CompletableFuture<String> completableFutureWorld = CompletableFuture
+                .supplyAsync(helloWorldService::world)
+                .thenApply(String::toUpperCase);
+        CompletableFuture<String> completableFutureHi = CompletableFuture
+                .supplyAsync(() -> {
+                    delay(1000);
+                    return " hi CompletableFuture!";
+                })
+                .thenApply(String::toUpperCase);
+        CompletableFuture<String> completableFutureCombined = completableFutureHello
+                .thenCombine(completableFutureWorld, (hello, world) -> hello + world)
+                .thenCombine(completableFutureHi, (previous, current) -> previous + current);
 
         stopWatch.stop();
 
