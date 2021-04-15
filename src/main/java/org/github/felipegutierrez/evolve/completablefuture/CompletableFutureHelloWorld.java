@@ -6,6 +6,7 @@ import org.github.felipegutierrez.evolve.service.HelloWorldService;
 import java.util.concurrent.CompletableFuture;
 
 import static org.github.felipegutierrez.evolve.util.CommonUtil.delay;
+import static org.github.felipegutierrez.evolve.util.LoggerUtil.log;
 
 public class CompletableFutureHelloWorld {
 
@@ -70,7 +71,17 @@ public class CompletableFutureHelloWorld {
                 })
                 .thenApply(String::toUpperCase);
         CompletableFuture<String> completableFutureCombined = completableFutureHello
+                .handle((value, exception) -> {
+                    if (exception != null) log("Hello Exception is: " + exception.getMessage());
+                    if (value == null || value.isBlank() || value.isEmpty() || "null".equalsIgnoreCase(value)) return "";
+                    else return value;
+                })
                 .thenCombine(completableFutureWorld, (hello, world) -> hello + world)
+                .handle((value, exception) -> {
+                    if (exception != null) log("World Exception is: " + exception.getMessage());
+                    if (value == null || value.isBlank() || value.isEmpty() || "null".equalsIgnoreCase(value)) return "";
+                    else return value;
+                })
                 .thenCombine(completableFutureHi, (previous, current) -> previous + current)
                 .thenCombine(completableFutureBye, (previous, current) -> previous + current);
 
