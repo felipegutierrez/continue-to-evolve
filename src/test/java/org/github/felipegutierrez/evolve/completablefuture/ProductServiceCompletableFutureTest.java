@@ -58,4 +58,19 @@ class ProductServiceCompletableFutureTest {
                 });
         assertNotNull(product.getReview());
     }
+
+    @Test
+    @Timeout(value = 1600, unit = TimeUnit.MILLISECONDS)
+    void retrieveProductDetailsClientWithInventoryAsync() {
+        String productId = "ABC123";
+        Product product = productServiceCompletableFuture.retrieveProductDetailsClientWithInventoryAsync(productId);
+
+        assertNotNull(product);
+        assertTrue(product.getProductInfo().getProductOptions().size() > 0);
+        product.getProductInfo().getProductOptions()
+                .forEach(productOption -> {
+                    assertNotNull(productOption.getInventory());
+                });
+        assertNotNull(product.getReview());
+    }
 }

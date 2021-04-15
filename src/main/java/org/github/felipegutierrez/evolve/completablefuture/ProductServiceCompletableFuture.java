@@ -68,7 +68,7 @@ public class ProductServiceCompletableFuture {
         CompletableFuture<ProductInfo> productInfoCompletableFuture = CompletableFuture
                 .supplyAsync(() -> productInfoService.retrieveProductInfo(productId))
                 .thenApply(productInfo -> {
-                    productInfo.setProductOptions(updateInventory(productInfo));
+                    productInfo.setProductOptions(updateInventoryNestedCall(productInfo));
                     return productInfo;
                 });
         CompletableFuture<Review> reviewCompletableFuture = CompletableFuture
@@ -82,7 +82,7 @@ public class ProductServiceCompletableFuture {
         return product;
     }
 
-    private List<ProductOption> updateInventory(ProductInfo productInfo) {
+    private List<ProductOption> updateInventoryNestedCall(ProductInfo productInfo) {
         List<ProductOption> productOptionList = productInfo.getProductOptions()
                 .stream()
                 .map(productOption -> {
@@ -92,5 +92,44 @@ public class ProductServiceCompletableFuture {
                 })
                 .collect(Collectors.toList());
         return productOptionList;
+    }
+
+    public Product retrieveProductDetailsClientWithInventoryAsync(String productId) {
+        stopWatch.reset();
+        stopWatch.start();
+
+        CompletableFuture<ProductInfo> productInfoCompletableFuture = CompletableFuture
+                .supplyAsync(() -> productInfoService.retrieveProductInfo(productId))
+                .thenApply(productInfo -> {
+                    productInfo.setProductOptions(updateInventoryNestedCallAsync(productInfo));
+                    return productInfo;
+                });
+        CompletableFuture<Review> reviewCompletableFuture = CompletableFuture
+                .supplyAsync(() -> reviewService.retrieveReviews(productId)); // non-blocking
+        Product product = productInfoCompletableFuture
+                .thenCombine(reviewCompletableFuture, (productInfo, review) -> new Product(productId, productInfo, review))
+                .join(); // block the thread
+
+        stopWatch.stop();
+        log("Total Time Taken : " + stopWatch.getTime());
+        return product;
+    }
+
+    private List<ProductOption> updateInventoryNestedCallAsync(ProductInfo productInfo) {
+        List<CompletableFuture<ProductOption>> completableFutureList = productInfo.getProductOptions()
+                .stream()
+                .map(productOption -> {
+                    return CompletableFuture
+                            .supplyAsync(() -> inventoryService.retrieveInventory(productOption))
+                            .thenApply(inventory -> {
+                                productOption.setInventory(inventory);
+                                return productOption;
+                            });
+                })
+                .collect(Collectors.toList());
+        return completableFutureList
+                .stream()
+                .map(CompletableFuture::join)
+                .collect(Collectors.toList());
     }
 }
