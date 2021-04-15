@@ -72,15 +72,23 @@ public class CompletableFutureHelloWorld {
                 .thenApply(String::toUpperCase);
         CompletableFuture<String> completableFutureCombined = completableFutureHello
                 .handle((value, exception) -> {
-                    if (exception != null) log("Hello Exception is: " + exception.getMessage());
-                    if (value == null || value.isBlank() || value.isEmpty() || "null".equalsIgnoreCase(value)) return "";
-                    else return value;
+                    log("Hello is: " + value);
+                    if (exception != null) {
+                        log("Hello Exception is: " + exception.getMessage());
+                        return "";
+                    } else {
+                        return value;
+                    }
                 })
                 .thenCombine(completableFutureWorld, (hello, world) -> hello + world)
                 .handle((value, exception) -> {
-                    if (exception != null) log("World Exception is: " + exception.getMessage());
-                    if (value == null || value.isBlank() || value.isEmpty() || "null".equalsIgnoreCase(value)) return "";
-                    else return value;
+                    log("World is: " + value);
+                    if (exception != null) {
+                        log("World Exception is: " + exception.getMessage());
+                        return "";
+                    } else {
+                        return value;
+                    }
                 })
                 .thenCombine(completableFutureHi, (previous, current) -> previous + current)
                 .thenCombine(completableFutureBye, (previous, current) -> previous + current);
