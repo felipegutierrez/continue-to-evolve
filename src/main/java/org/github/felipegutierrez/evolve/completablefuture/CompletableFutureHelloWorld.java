@@ -78,4 +78,16 @@ public class CompletableFutureHelloWorld {
 
         return completableFutureCombined;
     }
+
+    /**
+     * "thenCompose" is a dependent task on the pipeline and it adds to the total time execution of the pipeline
+     *
+     * @return
+     */
+    public CompletableFuture<String> helloWorldUpperCaseWithCompose() {
+        return CompletableFuture
+                .supplyAsync(helloWorldService::hello)
+                .thenCompose(previous -> helloWorldService.worldFuture(previous))
+                .thenApply(String::toUpperCase);
+    }
 }
