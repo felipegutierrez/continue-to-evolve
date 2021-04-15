@@ -1,22 +1,211 @@
-'[Test worker] - Total Time Taken : 172
-$Parallel: [false] - total time: 172
-'[Test worker] - Total Time Taken : 141
-$Parallel: [false] - total time: 141
-'[Test worker] - Total Time Taken : 137
-$Parallel: [false] - total time: 137
-&[Test worker] - Total Time Taken : 75
-#Parallel: [false] - total time: 75
-'[Test worker] - Total Time Taken : 177
-$Parallel: [false] - total time: 177
-&[Test worker] - Total Time Taken : 98
-"Parallel: [true] - total time: 98
-'[Test worker] - Total Time Taken : 115
-#Parallel: [true] - total time: 115
-	'[Test worker] - Total Time Taken : 103
-	#Parallel: [true] - total time: 103
-
-&[Test worker] - Total Time Taken : 86
-
-"Parallel: [true] - total time: 86
-'[Test worker] - Total Time Taken : 160
-#Parallel: [true] - total time: 160
+2[ForkJoinPool.commonPool-worker-3] - inside hello
+2[ForkJoinPool.commonPool-worker-5] - inside world
+7[ForkJoinPool.commonPool-worker-3] - inside helloWorld
+7[ForkJoinPool.commonPool-worker-3] - inside helloWorld
+2[ForkJoinPool.commonPool-worker-3] - inside hello
+2[ForkJoinPool.commonPool-worker-5] - inside world
+2[ForkJoinPool.commonPool-worker-3] - inside hello
+timeElapsed: 2007
+3[ForkJoinPool-1-worker-3] - leftResult: [4 - Jill]
+2[ForkJoinPool-1-worker-5] - leftResult: [3 - Bob]
+=[ForkJoinPool-1-worker-3] - leftResult: [3 - Bob, 5 - Jamie]
+)[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 515
+
+	)[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+
+	Total time taken : 1019
+5[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
+'[Test worker] - Total Time Taken : 504
+F[Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+)[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 504
+5[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
+([Test worker] - Total Time Taken : 2001
+F[Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+)[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 2001
+5[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
+([Test worker] - Total Time Taken : 2001
+F[Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+)[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 2001
+5[Test worker] - namesList : [Bob, Jamie, Jill, Rick]
+'[Test worker] - Total Time Taken : 501
+F[Test worker] - resultList : [3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+)[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 501
+'[Test worker] - Total Time Taken : 148
+$Parallel: [false] - total time: 148
+'[Test worker] - Total Time Taken : 101
+$Parallel: [false] - total time: 101
+&[Test worker] - Total Time Taken : 53
+#Parallel: [false] - total time: 53
+'[Test worker] - Total Time Taken : 129
+$Parallel: [false] - total time: 129
+&[Test worker] - Total Time Taken : 93
+#Parallel: [false] - total time: 93
+&[Test worker] - Total Time Taken : 40
+"Parallel: [true] - total time: 40
+'[Test worker] - Total Time Taken : 148
+#Parallel: [true] - total time: 148
+ '[Test worker] - Total Time Taken : 199
+ #Parallel: [true] - total time: 199
+!'[Test worker] - Total Time Taken : 122
+!#Parallel: [true] - total time: 122
+"'[Test worker] - Total Time Taken : 116
+"#Parallel: [true] - total time: 116
+$#ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=2, itemName=CartItem -2, rate=87.50048809153498, quantity=2, isExpired=false)
+$#ò[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=6, itemName=CartItem -6, rate=50.119332510234564, quantity=6, isExpired=false)
+$#ó[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=5, itemName=CartItem -5, rate=68.29827801797101, quantity=5, isExpired=false)
+$#Å[Test worker] - isCartItemInvalid : CartItem(itemId=4, itemName=CartItem -4, rate=55.4009240518188, quantity=4, isExpired=false)
+$#ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=3, itemName=CartItem -3, rate=64.71648391610552, quantity=3, isExpired=false)
+$#ó[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=1, itemName=CartItem -1, rate=83.48952596811063, quantity=1, isExpired=false)
+$#K[Test worker] - Checkout Complete and the final rate is 1316.4510352580348
+$%parallelism : 3
+$&õ[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=33, itemName=CartItem -33, rate=100.55497340263452, quantity=33, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=14, itemName=CartItem -14, rate=52.00738375687847, quantity=14, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=66, itemName=CartItem -66, rate=91.94776124814405, quantity=66, isExpired=false)
+$&ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=7, itemName=CartItem -7, rate=97.84346025968819, quantity=7, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=67, itemName=CartItem -67, rate=89.30519789676984, quantity=67, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=15, itemName=CartItem -15, rate=67.76539512301571, quantity=15, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=34, itemName=CartItem -34, rate=84.60182774733231, quantity=34, isExpired=false)
+$&ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=8, itemName=CartItem -8, rate=64.75299507383758, quantity=8, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=16, itemName=CartItem -16, rate=93.67303096580034, quantity=16, isExpired=false)
+$&Ñ[Test worker] - isCartItemInvalid : CartItem(itemId=68, itemName=CartItem -68, rate=83.1143913460255, quantity=68, isExpired=false)
+$&ô[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=35, itemName=CartItem -35, rate=65.0008125176814, quantity=35, isExpired=false)
+$&ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=9, itemName=CartItem -9, rate=91.16288640503197, quantity=9, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=17, itemName=CartItem -17, rate=59.61521890625493, quantity=17, isExpired=false)
+$&õ[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=36, itemName=CartItem -36, rate=63.009830550938815, quantity=36, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=69, itemName=CartItem -69, rate=89.49548445609022, quantity=69, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=10, itemName=CartItem -10, rate=57.47785486847018, quantity=10, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=37, itemName=CartItem -37, rate=79.80702388469084, quantity=37, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=18, itemName=CartItem -18, rate=53.59597725101791, quantity=18, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=70, itemName=CartItem -70, rate=92.49378518279393, quantity=70, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=11, itemName=CartItem -11, rate=72.94923792278084, quantity=11, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=38, itemName=CartItem -38, rate=85.97126706388508, quantity=38, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=19, itemName=CartItem -19, rate=79.23337501915663, quantity=19, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=71, itemName=CartItem -71, rate=81.14212313441377, quantity=71, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=12, itemName=CartItem -12, rate=52.26657771646921, quantity=12, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=39, itemName=CartItem -39, rate=67.32367499104285, quantity=39, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=20, itemName=CartItem -20, rate=83.64060885968304, quantity=20, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=72, itemName=CartItem -72, rate=58.16089625167777, quantity=72, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=13, itemName=CartItem -13, rate=88.54461317509175, quantity=13, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=21, itemName=CartItem -21, rate=66.16062713178007, quantity=21, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=27, itemName=CartItem -27, rate=65.92236924159576, quantity=27, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=73, itemName=CartItem -73, rate=83.76204897415396, quantity=73, isExpired=false)
+$&ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=1, itemName=CartItem -1, rate=51.00856071591023, quantity=1, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=22, itemName=CartItem -22, rate=96.14117801141461, quantity=22, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=28, itemName=CartItem -28, rate=70.02779734069352, quantity=28, isExpired=false)
+$&ñ[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=2, itemName=CartItem -2, rate=62.3976922110899, quantity=2, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=74, itemName=CartItem -74, rate=96.12058709519712, quantity=74, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=23, itemName=CartItem -23, rate=75.39551952264623, quantity=23, isExpired=false)
+$&ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=3, itemName=CartItem -3, rate=64.15800413849007, quantity=3, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=75, itemName=CartItem -75, rate=77.82371574253006, quantity=75, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=29, itemName=CartItem -29, rate=73.25704809717395, quantity=29, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=30, itemName=CartItem -30, rate=85.54744177458586, quantity=30, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=76, itemName=CartItem -76, rate=55.32015843200519, quantity=76, isExpired=false)
+$&ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=4, itemName=CartItem -4, rate=90.30995209538587, quantity=4, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=24, itemName=CartItem -24, rate=85.94350138500968, quantity=24, isExpired=false)
+$&Ñ[Test worker] - isCartItemInvalid : CartItem(itemId=77, itemName=CartItem -77, rate=75.7954104450969, quantity=77, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=31, itemName=CartItem -31, rate=94.19159416962759, quantity=31, isExpired=false)
+$&ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=5, itemName=CartItem -5, rate=83.61607752372743, quantity=5, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=25, itemName=CartItem -25, rate=85.63081494647196, quantity=25, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=78, itemName=CartItem -78, rate=51.33836867610111, quantity=78, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=32, itemName=CartItem -32, rate=90.68416453456288, quantity=32, isExpired=false)
+$&õ[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=26, itemName=CartItem -26, rate=57.361214340307335, quantity=26, isExpired=false)
+$&ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=6, itemName=CartItem -6, rate=76.59254591531537, quantity=6, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=46, itemName=CartItem -46, rate=83.30386953859633, quantity=46, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=40, itemName=CartItem -40, rate=69.69302656083028, quantity=40, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=59, itemName=CartItem -59, rate=90.34153955275313, quantity=59, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=92, itemName=CartItem -92, rate=65.89554123434827, quantity=92, isExpired=false)
+$&ô[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=47, itemName=CartItem -47, rate=63.5315140137827, quantity=47, isExpired=false)
+$&ô[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=41, itemName=CartItem -41, rate=72.9291492253931, quantity=41, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=60, itemName=CartItem -60, rate=97.63304482376783, quantity=60, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=93, itemName=CartItem -93, rate=54.22355341564723, quantity=93, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=48, itemName=CartItem -48, rate=66.41210709476667, quantity=48, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=61, itemName=CartItem -61, rate=78.67139654703955, quantity=61, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=94, itemName=CartItem -94, rate=77.58592875401206, quantity=94, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=42, itemName=CartItem -42, rate=56.80046914043976, quantity=42, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=62, itemName=CartItem -62, rate=82.18205107730626, quantity=62, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=49, itemName=CartItem -49, rate=74.23688038649571, quantity=49, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=43, itemName=CartItem -43, rate=67.56451664880517, quantity=43, isExpired=false)
+$&õ[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=95, itemName=CartItem -95, rate=61.445342387566726, quantity=95, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=44, itemName=CartItem -44, rate=79.97241972377984, quantity=44, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=63, itemName=CartItem -63, rate=86.49505642811366, quantity=63, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=50, itemName=CartItem -50, rate=84.00450577701923, quantity=50, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=96, itemName=CartItem -96, rate=65.12543749621993, quantity=96, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=45, itemName=CartItem -45, rate=97.15714867341252, quantity=45, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=64, itemName=CartItem -64, rate=67.38474545885074, quantity=64, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=51, itemName=CartItem -51, rate=97.83168680458824, quantity=51, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=97, itemName=CartItem -97, rate=70.32782449260708, quantity=97, isExpired=false)
+$&ô[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=85, itemName=CartItem -85, rate=81.0065004595052, quantity=85, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=65, itemName=CartItem -65, rate=79.15069106462546, quantity=65, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=98, itemName=CartItem -98, rate=68.17336643266214, quantity=98, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=52, itemName=CartItem -52, rate=75.88962835302831, quantity=52, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=86, itemName=CartItem -86, rate=53.60822050335257, quantity=86, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=99, itemName=CartItem -99, rate=70.41039079306164, quantity=99, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=53, itemName=CartItem -53, rate=55.27044084998939, quantity=53, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=79, itemName=CartItem -79, rate=84.19993713759531, quantity=79, isExpired=false)
+$&õ[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=87, itemName=CartItem -87, rate=59.406576507765905, quantity=87, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=54, itemName=CartItem -54, rate=52.10395963691962, quantity=54, isExpired=false)
+$&ù[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=100, itemName=CartItem -100, rate=92.83399388649994, quantity=100, isExpired=false)
+$&õ[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=80, itemName=CartItem -80, rate=57.463872729408905, quantity=80, isExpired=false)
+$&õ[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=88, itemName=CartItem -88, rate=57.305703000146416, quantity=88, isExpired=false)
+$&Ñ[Test worker] - isCartItemInvalid : CartItem(itemId=55, itemName=CartItem -55, rate=51.5932249395871, quantity=55, isExpired=false)
+$&õ[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=81, itemName=CartItem -81, rate=50.155638591635466, quantity=81, isExpired=false)
+$&ù[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=101, itemName=CartItem -101, rate=70.69148558688491, quantity=101, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=89, itemName=CartItem -89, rate=56.17224085038761, quantity=89, isExpired=false)
+$&Ö[Test worker] - isCartItemInvalid : CartItem(itemId=56, itemName=CartItem -56, rate=97.91998536243116, quantity=56, isExpired=false)
+$&ù[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=102, itemName=CartItem -102, rate=72.53458929617854, quantity=102, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=82, itemName=CartItem -82, rate=97.74942739008866, quantity=82, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=90, itemName=CartItem -90, rate=81.46291790230403, quantity=90, isExpired=false)
+$&Ñ[Test worker] - isCartItemInvalid : CartItem(itemId=57, itemName=CartItem -57, rate=79.0568901031706, quantity=57, isExpired=false)
+$&ù[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=103, itemName=CartItem -103, rate=84.21774779504449, quantity=103, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=83, itemName=CartItem -83, rate=83.43807604574118, quantity=83, isExpired=false)
+$&ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=91, itemName=CartItem -91, rate=97.22599568233333, quantity=91, isExpired=false)
+$&É[Test worker] - isCartItemInvalid : CartItem(itemId=58, itemName=CartItem -58, rate=57.832476192223, quantity=58, isExpired=false)
+$&ù[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=104, itemName=CartItem -104, rate=79.29794092977309, quantity=104, isExpired=false)
+$&ô[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=84, itemName=CartItem -84, rate=97.0468680268485, quantity=84, isExpired=false)
+$&ù[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=105, itemName=CartItem -105, rate=64.73385813750113, quantity=105, isExpired=false)
+$&[Test worker] - Checkout Error
+$'size of the cart  : 12
+$'ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=4, itemName=CartItem -4, rate=67.66213909017075, quantity=4, isExpired=false)
+$'ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=10, itemName=CartItem -10, rate=56.28743335482129, quantity=10, isExpired=false)
+$'ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=11, itemName=CartItem -11, rate=75.25256922367791, quantity=11, isExpired=false)
+$'É[Test worker] - isCartItemInvalid : CartItem(itemId=8, itemName=CartItem -8, rate=55.866189766691555, quantity=8, isExpired=false)
+$'ó[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=7, itemName=CartItem -7, rate=97.45462645555048, quantity=7, isExpired=false)
+$'Ç[Test worker] - isCartItemInvalid : CartItem(itemId=9, itemName=CartItem -9, rate=89.85375369471647, quantity=9, isExpired=false)
+$'ô[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=12, itemName=CartItem -12, rate=89.5195778733366, quantity=12, isExpired=false)
+$'ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=6, itemName=CartItem -6, rate=94.10667318504801, quantity=6, isExpired=false)
+$'ó[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=1, itemName=CartItem -1, rate=96.70296015645707, quantity=1, isExpired=false)
+$'ó[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=2, itemName=CartItem -2, rate=61.19434742396493, quantity=2, isExpired=false)
+$'ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=5, itemName=CartItem -5, rate=72.07764581382268, quantity=5, isExpired=false)
+$'ó[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=3, itemName=CartItem -3, rate=64.38551803927389, quantity=3, isExpired=false)
+$'[Test worker] - Checkout Error
+$(ó[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=8, itemName=CartItem -8, rate=59.82622139198369, quantity=8, isExpired=false)
+$(ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=4, itemName=CartItem -4, rate=78.95984372076971, quantity=4, isExpired=false)
+$(ô[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=11, itemName=CartItem -11, rate=50.3557967908544, quantity=11, isExpired=false)
+$(Ö[Test worker] - isCartItemInvalid : CartItem(itemId=16, itemName=CartItem -16, rate=99.69215799528558, quantity=16, isExpired=false)
+$(ó[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=9, itemName=CartItem -9, rate=94.76665444723659, quantity=9, isExpired=false)
+$(ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=5, itemName=CartItem -5, rate=58.54254268595342, quantity=5, isExpired=false)
+$(ô[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=12, itemName=CartItem -12, rate=63.5570832109927, quantity=12, isExpired=false)
+$(Ö[Test worker] - isCartItemInvalid : CartItem(itemId=17, itemName=CartItem -17, rate=57.60448531285265, quantity=17, isExpired=false)
+$(ó[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=7, itemName=CartItem -7, rate=76.93405059271849, quantity=7, isExpired=false)
+$(ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=10, itemName=CartItem -10, rate=56.15138063316852, quantity=10, isExpired=false)
+$(ñ[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=6, itemName=CartItem -6, rate=75.3381993570782, quantity=6, isExpired=false)
+$(Ö[Test worker] - isCartItemInvalid : CartItem(itemId=18, itemName=CartItem -18, rate=79.75751443355529, quantity=18, isExpired=false)
+$(õ[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=20, itemName=CartItem -20, rate=100.48606070148784, quantity=20, isExpired=false)
+$(õ[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=22, itemName=CartItem -22, rate=60.008971297683985, quantity=22, isExpired=false)
+$(ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=2, itemName=CartItem -2, rate=59.56954679510197, quantity=2, isExpired=false)
+$(Ö[Test worker] - isCartItemInvalid : CartItem(itemId=14, itemName=CartItem -14, rate=57.23771299301021, quantity=14, isExpired=false)
+$(ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=23, itemName=CartItem -23, rate=71.59568271917598, quantity=23, isExpired=false)
+$(ô[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=21, itemName=CartItem -21, rate=91.7571293395242, quantity=21, isExpired=false)
+$(ó[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=3, itemName=CartItem -3, rate=85.29974436535711, quantity=3, isExpired=false)
+$(Ñ[Test worker] - isCartItemInvalid : CartItem(itemId=15, itemName=CartItem -15, rate=71.6447700956753, quantity=15, isExpired=false)
+$(ñ[ForkJoinPool.commonPool-worker-7] - isCartItemInvalid : CartItem(itemId=1, itemName=CartItem -1, rate=92.1143093247738, quantity=1, isExpired=false)
+$(ö[ForkJoinPool.commonPool-worker-3] - isCartItemInvalid : CartItem(itemId=19, itemName=CartItem -19, rate=71.82169795877707, quantity=19, isExpired=false)
+$(ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=24, itemName=CartItem -24, rate=78.61998706963846, quantity=24, isExpired=false)
+$(Ö[Test worker] - isCartItemInvalid : CartItem(itemId=13, itemName=CartItem -13, rate=90.37170806183974, quantity=13, isExpired=false)
+$(ö[ForkJoinPool.commonPool-worker-5] - isCartItemInvalid : CartItem(itemId=25, itemName=CartItem -25, rate=98.14407257386227, quantity=25, isExpired=false)
+$([Test worker] - Checkout Error

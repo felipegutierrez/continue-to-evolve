@@ -12,11 +12,13 @@ org/github/felipegutierrez/evolve/codility/PermMissingElemTest.java
  org.github.felipegutierrez.evolve.codility.PermMissingElemTest
 org/github/felipegutierrez/evolve/forkjoin/ForkJoinPoolExampleTest.java
  org.github.felipegutierrez.evolve.forkjoin.ForkJoinPoolExampleTest
-org/github/felipegutierrez/evolve/service/CheckoutServiceTest.java
- org.github.felipegutierrez.evolve.service.CheckoutServiceTest
-org/github/felipegutierrez/evolve/forkjoin/ForkJoinUsingRecursionTest.java
- org.github.felipegutierrez.evolve.forkjoin.ForkJoinUsingRecursionTest
-org/github/felipegutierrez/evolve/streams/StreamsExampleTest.java
- org.github.felipegutierrez.evolve.streams.StreamsExampleTest
 org/github/felipegutierrez/evolve/streams/ArrayListSpliteratorExampleTest.java
  org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest
+org/github/felipegutierrez/evolve/forkjoin/ForkJoinUsingRecursionTest.java
+ org.github.felipegutierrez.evolve.forkjoin.ForkJoinUsingRecursionTest
+org/github/felipegutierrez/evolve/service/CheckoutServiceTest.java
+ org.github.felipegutierrez.evolve.service.CheckoutServiceTest
+org/github/felipegutierrez/evolve/streams/StreamsExampleTest.java
+ org.github.felipegutierrez.evolve.streams.StreamsExampleTest
+org/github/felipegutierrez/evolve/completablefuture/CompletableFutureHelloWorldTest.java
+ org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest

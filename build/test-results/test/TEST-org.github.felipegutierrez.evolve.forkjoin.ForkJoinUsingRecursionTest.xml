@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.github.felipegutierrez.evolve.forkjoin.ForkJoinUsingRecursionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-15T08:55:54" hostname="stamina" time="0.526">
+  <properties/>
+  <testcase name="computeForkJoin()" classname="org.github.felipegutierrez.evolve.forkjoin.ForkJoinUsingRecursionTest" time="0.526"/>
+  <system-out><![CDATA[[ForkJoinPool-1-worker-3] - leftResult: [4 - Jill]
+[ForkJoinPool-1-worker-5] - leftResult: [3 - Bob]
+[ForkJoinPool-1-worker-3] - leftResult: [3 - Bob, 5 - Jamie]
+[3 - Bob, 5 - Jamie, 4 - Jill, 4 - Rick]
+Total time taken : 515
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

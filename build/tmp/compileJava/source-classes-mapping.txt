@@ -55,15 +55,21 @@ org/github/felipegutierrez/evolve/service/PriceValidatorService.java
  org.github.felipegutierrez.evolve.service.PriceValidatorService
 org/github/felipegutierrez/evolve/forkjoin/ForkJoinUsingRecursion.java
  org.github.felipegutierrez.evolve.forkjoin.ForkJoinUsingRecursion
-org/github/felipegutierrez/evolve/service/CheckoutService.java
- org.github.felipegutierrez.evolve.service.CheckoutService
+org/github/felipegutierrez/evolve/streams/ArrayListSpliteratorExample.java
+ org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExample
 org/github/felipegutierrez/evolve/product/ProductInfoService.java
  org.github.felipegutierrez.evolve.product.ProductInfoService
-org/github/felipegutierrez/evolve/streams/StreamsExample.java
- org.github.felipegutierrez.evolve.streams.StreamsExample
+org/github/felipegutierrez/evolve/service/CheckoutService.java
+ org.github.felipegutierrez.evolve.service.CheckoutService
 org/github/felipegutierrez/evolve/product/ProductServiceExecutor.java
  org.github.felipegutierrez.evolve.product.ProductServiceExecutor
 org/github/felipegutierrez/evolve/service/ProductService.java
  org.github.felipegutierrez.evolve.service.ProductService
-org/github/felipegutierrez/evolve/streams/ArrayListSpliteratorExample.java
- org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExample
+org/github/felipegutierrez/evolve/util/Operation.java
+ org.github.felipegutierrez.evolve.util.Operation
+org/github/felipegutierrez/evolve/streams/StreamsExample.java
+ org.github.felipegutierrez.evolve.streams.StreamsExample
+org/github/felipegutierrez/evolve/service/HelloWorldService.java
+ org.github.felipegutierrez.evolve.service.HelloWorldService
+org/github/felipegutierrez/evolve/completablefuture/CompletableFutureHelloWorld.java
+ org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorld

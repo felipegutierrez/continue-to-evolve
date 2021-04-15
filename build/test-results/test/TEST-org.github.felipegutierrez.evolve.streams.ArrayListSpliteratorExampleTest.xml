@@ -1,36 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-04-14T12:41:50" hostname="stamina" time="2.345">
+<testsuite name="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2021-04-15T08:56:02" hostname="stamina" time="2.278">
   <properties/>
-  <testcase name="repetition 1 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.284"/>
-  <testcase name="repetition 2 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.144"/>
-  <testcase name="repetition 3 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.141"/>
-  <testcase name="repetition 4 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.078"/>
-  <testcase name="repetition 5 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.181"/>
-  <testcase name="repetition 1 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.103"/>
-  <testcase name="repetition 2 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.124"/>
-  <testcase name="repetition 3 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.107"/>
-  <testcase name="repetition 4 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.089"/>
-  <testcase name="repetition 5 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.163"/>
-  <system-out><![CDATA[[Test worker] - Total Time Taken : 172
-Parallel: [false] - total time: 172
-[Test worker] - Total Time Taken : 141
-Parallel: [false] - total time: 141
-[Test worker] - Total Time Taken : 137
-Parallel: [false] - total time: 137
-[Test worker] - Total Time Taken : 75
-Parallel: [false] - total time: 75
-[Test worker] - Total Time Taken : 177
-Parallel: [false] - total time: 177
-[Test worker] - Total Time Taken : 98
-Parallel: [true] - total time: 98
-[Test worker] - Total Time Taken : 115
-Parallel: [true] - total time: 115
-[Test worker] - Total Time Taken : 103
-Parallel: [true] - total time: 103
-[Test worker] - Total Time Taken : 86
-Parallel: [true] - total time: 86
-[Test worker] - Total Time Taken : 160
-Parallel: [true] - total time: 160
+  <testcase name="repetition 1 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.16"/>
+  <testcase name="repetition 2 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.102"/>
+  <testcase name="repetition 3 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.056"/>
+  <testcase name="repetition 4 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.132"/>
+  <testcase name="repetition 5 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.095"/>
+  <testcase name="multiplyEachValueList()" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.002"/>
+  <testcase name="multiplyEachValueSet()" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.005"/>
+  <testcase name="repetition 1 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.043"/>
+  <testcase name="repetition 2 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.15"/>
+  <testcase name="repetition 3 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.201"/>
+  <testcase name="repetition 4 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.124"/>
+  <testcase name="repetition 5 of 5" classname="org.github.felipegutierrez.evolve.streams.ArrayListSpliteratorExampleTest" time="0.142"/>
+  <system-out><![CDATA[[Test worker] - Total Time Taken : 148
+Parallel: [false] - total time: 148
+[Test worker] - Total Time Taken : 101
+Parallel: [false] - total time: 101
+[Test worker] - Total Time Taken : 53
+Parallel: [false] - total time: 53
+[Test worker] - Total Time Taken : 129
+Parallel: [false] - total time: 129
+[Test worker] - Total Time Taken : 93
+Parallel: [false] - total time: 93
+[Test worker] - Total Time Taken : 40
+Parallel: [true] - total time: 40
+[Test worker] - Total Time Taken : 148
+Parallel: [true] - total time: 148
+[Test worker] - Total Time Taken : 199
+Parallel: [true] - total time: 199
+[Test worker] - Total Time Taken : 122
+Parallel: [true] - total time: 122
+[Test worker] - Total Time Taken : 116
+Parallel: [true] - total time: 116
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

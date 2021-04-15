@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-04-15T08:55:47" hostname="stamina" time="7.219">
+  <properties/>
+  <testcase name="helloWorldCombinedUpperCase()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="1.145"/>
+  <testcase name="helloWorld()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="1.009"/>
+  <testcase name="helloWorldUpperCaseWithLength()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="1.024"/>
+  <testcase name="helloWorldCombined4UpperCase()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="2.009"/>
+  <testcase name="helloWorldUpperCaseWithCompose()" classname="org.github.felipegutierrez.evolve.completablefuture.CompletableFutureHelloWorldTest" time="2.022"/>
+  <system-out><![CDATA[[ForkJoinPool.commonPool-worker-3] - inside hello
+[ForkJoinPool.commonPool-worker-5] - inside world
+[ForkJoinPool.commonPool-worker-3] - inside helloWorld
+[ForkJoinPool.commonPool-worker-3] - inside helloWorld
+[ForkJoinPool.commonPool-worker-3] - inside hello
+[ForkJoinPool.commonPool-worker-5] - inside world
+[ForkJoinPool.commonPool-worker-3] - inside hello
+timeElapsed: 2007
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
