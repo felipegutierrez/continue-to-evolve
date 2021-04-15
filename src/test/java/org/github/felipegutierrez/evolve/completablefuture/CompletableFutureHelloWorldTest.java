@@ -172,4 +172,19 @@ class CompletableFutureHelloWorldTest {
                 .join();
     }
 
+    @Test
+    @Timeout(value = 2200, unit = TimeUnit.MILLISECONDS)
+    void helloWorldCombined4UpperCaseWithCustomThreadPoolAndAsync() {
+        when(helloWorldService.hello()).thenReturn("hello");
+        when(helloWorldService.world()).thenCallRealMethod();
+
+        CompletableFuture<String> completableFuture = completableFutureHelloWorld.helloWorldCombined4UpperCaseWithCustomThreadPoolAndAsync();
+        completableFuture
+                .thenAccept(value -> assertEquals("HELLO WORLD! HI COMPLETABLEFUTURE! BYE!", value))
+                .join();
+        completableFuture
+                .thenAccept(value -> assertNotEquals("HELLO world! HI COMPLETABLEFUTURE! BYE!", value))
+                .join();
+    }
+
 }

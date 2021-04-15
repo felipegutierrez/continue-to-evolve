@@ -174,4 +174,73 @@ public class CompletableFutureHelloWorld {
 
         return completableFutureCombined;
     }
+
+    public CompletableFuture<String> helloWorldCombined4UpperCaseWithCustomThreadPoolAndAsync() {
+
+        ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+
+        stopWatch.reset();
+        stopWatch.start();
+
+        CompletableFuture<String> completableFutureHello = CompletableFuture
+                .supplyAsync(helloWorldService::hello, executorService)
+                .thenApplyAsync(value -> {
+                    log("thenApply toUpperCase");
+                    return value.toUpperCase();
+                }, executorService);
+        CompletableFuture<String> completableFutureWorld = CompletableFuture
+                .supplyAsync(helloWorldService::world, executorService)
+                .thenApplyAsync(value -> {
+                    log("thenApply toUpperCase");
+                    return value.toUpperCase();
+                }, executorService);
+        CompletableFuture<String> completableFutureHi = CompletableFuture
+                .supplyAsync(() -> {
+                    delay(1000);
+                    return " hi CompletableFuture!";
+                }, executorService)
+                .thenApplyAsync(value -> {
+                    log("thenApply toUpperCase");
+                    return value.toUpperCase();
+                }, executorService);
+        CompletableFuture<String> completableFutureBye = CompletableFuture
+                .supplyAsync(() -> {
+                    delay(1000);
+                    return " bye!";
+                }, executorService)
+                .thenApplyAsync(value -> {
+                    log("thenApply toUpperCase");
+                    return value.toUpperCase();
+                }, executorService);
+        CompletableFuture<String> completableFutureCombined = completableFutureHello
+                .handleAsync((value, exception) -> {
+                    log("Hello is: " + value);
+                    if (exception != null) {
+                        log("Hello Exception is: " + exception.getMessage());
+                        return "";
+                    } else {
+                        return value;
+                    }
+                }, executorService)
+                .thenCombineAsync(completableFutureWorld, (hello, world) -> {
+                    log("thenCombineAsync World");
+                    return hello + world;
+                }, executorService)
+                .exceptionally(exception -> {
+                    log("World Exception is: " + exception.getMessage());
+                    return "";
+                })
+                .thenCombineAsync(completableFutureHi, (previous, current) -> {
+                    log("thenCombineAsync Hi (previous, current)");
+                    return previous + current;
+                }, executorService)
+                .thenCombineAsync(completableFutureBye, (previous, current) -> {
+                    log("thenCombineAsync Bye (previous, current)");
+                    return previous + current;
+                }, executorService);
+
+        stopWatch.stop();
+
+        return completableFutureCombined;
+    }
 }
