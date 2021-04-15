@@ -3,6 +3,7 @@ package org.github.felipegutierrez.evolve.completablefuture;
 import org.apache.commons.lang3.time.StopWatch;
 import org.github.felipegutierrez.evolve.service.HelloWorldService;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -30,6 +31,41 @@ public class CompletableFutureHelloWorld {
                 .supplyAsync(helloWorldService::helloWorld)
                 .thenApply(String::toUpperCase)
                 .thenApply(value -> value.length() + " - " + value);
+    }
+
+    public String anyOf() {
+        // DB
+        CompletableFuture<String> db = CompletableFuture.supplyAsync(() -> {
+            delay(1000);
+            log("response from DB");
+            return "response from DB";
+        });
+
+        // REST api
+        CompletableFuture<String> restCall = CompletableFuture.supplyAsync(() -> {
+            delay(2000);
+            log("response from REST api");
+            return "response from REST";
+        });
+
+        // SOAP call
+        CompletableFuture<String> soapCall = CompletableFuture.supplyAsync(() -> {
+            delay(3000);
+            log("response from SOAP call");
+            return "response from SOAP";
+        });
+
+        List<CompletableFuture<String>> completableFutureList = List.of(db, restCall, soapCall);
+        CompletableFuture<Object> completableFutureAnyOf = CompletableFuture
+                .anyOf(completableFutureList.toArray(new CompletableFuture[completableFutureList.size()]));
+
+        String result = (String) completableFutureAnyOf
+                .thenApply(v -> {
+                    if (v instanceof String) return v;
+                    else return null;
+                })
+                .join();
+        return result;
     }
 
     public CompletableFuture<String> helloWorldCombinedUpperCase() {

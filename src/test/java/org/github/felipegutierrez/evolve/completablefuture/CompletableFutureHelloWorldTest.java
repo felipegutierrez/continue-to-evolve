@@ -40,6 +40,13 @@ class CompletableFutureHelloWorldTest {
     }
 
     @Test
+    void anyOf() {
+        String result = completableFutureHelloWorld.anyOf();
+
+        assertTrue(result.contains("response from"));
+    }
+
+    @Test
     @Timeout(value = 1200, unit = TimeUnit.MILLISECONDS)
     void helloWorldUpperCaseWithLength() {
         when(helloWorldService.helloWorld()).thenCallRealMethod();
@@ -186,5 +193,4 @@ class CompletableFutureHelloWorldTest {
                 .thenAccept(value -> assertNotEquals("HELLO world! HI COMPLETABLEFUTURE! BYE!", value))
                 .join();
     }
-
 }
