@@ -1,0 +1,100 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reload, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(onFailure loadFailed, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.4.7 (Oracle Corporation Java 1.8.0_201)[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                    Load.loadUnit: plugins took 12.340105ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                    Load.loadUnit: defsScala took 0.00569ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/felipe/.sbt/1.0/plugins[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/felipe/.sbt/1.0/plugins, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 2.4113 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                        Load.resolveProject(global-plugins) took 1.433045ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                      Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /home/felipe/.sbt/1.0/plugins, plugins: List(<none>))) took 4.39749ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/felipe/.sbt/1.0/plugins, returning: (global-plugins)[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                    Load.loadUnit: loadedProjectsRaw took 5.636273ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                    Load.loadUnit: cleanEvalClasses took 0.010702ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                  Load.loadUnit(file:/home/felipe/.sbt/1.0/plugins/, ...) took 18.465789ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                Load.apply: load took 19.572296ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                Load.apply: resolveProjects took 0.104352ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                Load.apply: finalTransforms took 6.658238ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                Load.apply: config.delegates took 0.517641ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                Load.apply: Def.make(settings)... took 124.880917ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                Load.apply: structureIndex took 72.885492ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                Load.apply: mkStreams took 0.004719ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading global plugins from /home/felipe/.sbt/1.0/plugins[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m                              Load.defaultLoad until apply took 522.280589ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                        Load.loadUnit: plugins took 20.582352ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                        Load.loadUnit: defsScala took 0.009346ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/felipe/workspace-idea/continue-to-evolve/project[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                          Load.loadUnit: mkEval took 0.36496ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/felipe/workspace-idea/continue-to-evolve/project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 2.25039 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project continue-to-evolve-build from plugins.sbt,idea.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                            Load.resolveProject(continue-to-evolve-build) took 12.735509ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                          Load.loadTransitive: finalizeProject(Project(id continue-to-evolve-build, base: /home/felipe/workspace-idea/continue-to-evolve/project, plugins: List(<none>))) took 15.634956ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/felipe/workspace-idea/continue-to-evolve/project, returning: (continue-to-evolve-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                        Load.loadUnit: loadedProjectsRaw took 58.388988ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                        Load.loadUnit: cleanEvalClasses took 1.406973ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                      Load.loadUnit(file:/home/felipe/workspace-idea/continue-to-evolve/project/, ...) took 81.10882ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                    Load.apply: load took 82.515372ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                    Load.apply: resolveProjects took 12.262107ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                    Load.apply: finalTransforms took 10.521335ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                    Load.apply: config.delegates took 0.525035ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                    Load.apply: Def.make(settings)... took 210.292395ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                    Load.apply: structureIndex took 37.780849ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                    Load.apply: mkStreams took 0.004082ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /home/felipe/workspace-idea/continue-to-evolve/project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                  Load.loadUnit: plugins took 2040.043024ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                  Load.loadUnit: defsScala took 0.004219ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /home/felipe/workspace-idea/continue-to-evolve[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                    Load.loadUnit: mkEval took 0.18828ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/felipe/workspace-idea/continue-to-evolve, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(scoverage.ScoverageSbtPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.scoverage.coveralls.CoverallsPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(scoverage.ScoverageSbtPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.scoverage.coveralls.CoverallsPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))), Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin)))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,scoverage.ScoverageSbtPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,org.scoverage.coveralls.CoverallsPlugin,sbt.plugins.MiniDependencyTreePlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 2.289825 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project continue-to-evolve from build.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                      Load.resolveProject(continue-to-evolve) took 46.606889ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                    Load.loadTransitive: finalizeProject(Project(id continue-to-evolve, base: /home/felipe/workspace-idea/continue-to-evolve, plugins: List(<none>))) took 51.069591ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /home/felipe/workspace-idea/continue-to-evolve, returning: (continue-to-evolve)[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                  Load.loadUnit: loadedProjectsRaw took 102.213361ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                  Load.loadUnit: cleanEvalClasses took 6.602868ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                                Load.loadUnit(file:/home/felipe/workspace-idea/continue-to-evolve/, ...) took 2149.372855ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                              Load.apply: load took 2151.090561ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                              Load.apply: resolveProjects took 0.176924ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                              Load.apply: finalTransforms took 40.889941ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                              Load.apply: config.delegates took 0.511545ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                              Load.apply: Def.make(settings)... took 113.932654ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                              Load.apply: structureIndex took 42.287154ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m                              Load.apply: mkStreams took 0.006022ms[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to continue-to-evolve (in build file:/home/felipe/workspace-idea/continue-to-evolve/)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(notifyUsersAboutShell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(iflast shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(; set ideaPort in Global := 34989 ; idea-shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(set ideaPort in Global := 34989, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mDefining Global / ideaPort[0m
+[0m[[0m[0minfo[0m] [0m[0mThe new value will be used by Compile / compile, Test / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mDefining [0m
+[0m[[0m[0mdebug[0m] [0m[0m	Global / ideaPort[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe new value will be used by [0m
+[0m[[0m[0mdebug[0m] [0m[0m	Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Test / compile[0m
+[0m[[0m[0minfo[0m] [0m[0mReapplying settings...[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to continue-to-evolve (in build file:/home/felipe/workspace-idea/continue-to-evolve/)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

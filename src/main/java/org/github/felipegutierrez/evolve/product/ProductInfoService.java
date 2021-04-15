@@ -1,7 +1,7 @@
 package org.github.felipegutierrez.evolve.product;
 
-import org.github.felipegutierrez.evolve.product.domain.ProductInfo;
-import org.github.felipegutierrez.evolve.product.domain.ProductOption;
+import org.github.felipegutierrez.evolve.domain.ProductInfo;
+import org.github.felipegutierrez.evolve.domain.ProductOption;
 
 import java.util.Arrays;
 import java.util.List;

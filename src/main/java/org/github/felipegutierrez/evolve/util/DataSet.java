@@ -1,5 +1,8 @@
 package org.github.felipegutierrez.evolve.util;
 
+import org.github.felipegutierrez.evolve.domain.Cart;
+import org.github.felipegutierrez.evolve.domain.CartItem;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,19 +14,19 @@ public class DataSet {
 
     public static List<String> lowerCaseAlphabetList = List.of("a", "b", "c", "a", "d", "e", "f", "e", "g", "h", "i");
 
-//    public static Cart createCart(int noOfItemsInCart) {
-//
-//        Cart cart = new Cart();
-//        List<CartItem> cartItemList = new ArrayList<>();
-//        IntStream.rangeClosed(1, noOfItemsInCart)
-//                .forEach((index) -> {
-//                    String cartItem = "CartItem -".concat(index + "");
-//                    CartItem cartItem1 = new CartItem(index, cartItem, generateRandomPrice(), index, false);
-//                    cartItemList.add(cartItem1);
-//                });
-//        cart.setCartItemList(cartItemList);
-//        return cart;
-//    }
+    public static Cart createCart(int noOfItemsInCart) {
+
+        Cart cart = new Cart();
+        List<CartItem> cartItemList = new ArrayList<>();
+        IntStream.rangeClosed(1, noOfItemsInCart)
+                .forEach((index) -> {
+                    String cartItem = "CartItem -".concat(index + "");
+                    CartItem cartItem1 = new CartItem(index, cartItem, generateRandomPrice(), index, false);
+                    cartItemList.add(cartItem1);
+                });
+        cart.setCartItemList(cartItemList);
+        return cart;
+    }
 
     public static List<String> namesList() {
         return List.of("Bob", "Jamie", "Jill", "Rick");
@@ -56,7 +59,6 @@ public class DataSet {
         return IntStream.rangeClosed(1, maxNumber)
                 .boxed().collect(Collectors.toSet());
     }
-
 
 
     public static double generateRandomPrice() {
