@@ -41,7 +41,15 @@ public class CompletableFutureHelloWorld {
                 .supplyAsync(helloWorldService::world)
                 .thenApply(String::toUpperCase);
         CompletableFuture<String> completableFutureCombined = completableFutureHello
-                .thenCombine(completableFutureWorld, (hello, world) -> hello + world);
+                .exceptionally(exception -> {
+                    log("Hello Exception is: " + exception.getMessage());
+                    return "";
+                })
+                .thenCombine(completableFutureWorld, (hello, world) -> hello + world)
+                .exceptionally(exception -> {
+                    log("World Exception is: " + exception.getMessage());
+                    return "";
+                });
 
         stopWatch.stop();
 
@@ -81,14 +89,9 @@ public class CompletableFutureHelloWorld {
                     }
                 })
                 .thenCombine(completableFutureWorld, (hello, world) -> hello + world)
-                .handle((value, exception) -> {
-                    log("World is: " + value);
-                    if (exception != null) {
-                        log("World Exception is: " + exception.getMessage());
-                        return "";
-                    } else {
-                        return value;
-                    }
+                .exceptionally(exception -> {
+                    log("World Exception is: " + exception.getMessage());
+                    return "";
                 })
                 .thenCombine(completableFutureHi, (previous, current) -> previous + current)
                 .thenCombine(completableFutureBye, (previous, current) -> previous + current);

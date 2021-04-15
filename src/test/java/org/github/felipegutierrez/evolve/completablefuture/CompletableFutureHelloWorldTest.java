@@ -72,10 +72,24 @@ class CompletableFutureHelloWorldTest {
     }
 
     @Test
+    @Timeout(value = 1200, unit = TimeUnit.MILLISECONDS)
+    void helloWorldCombinedUpperCaseWithException() {
+        when(helloWorldService.hello()).thenThrow(new RuntimeException("this is a generated exception!"));
+        when(helloWorldService.world()).thenCallRealMethod();
+
+        CompletableFuture<String> completableFuture = completableFutureHelloWorld.helloWorldCombinedUpperCase();
+        completableFuture
+                .thenAccept(value -> assertEquals(" WORLD!", value))
+                .join();
+        completableFuture
+                .thenAccept(value -> assertNotEquals("HELLO WORLD!", value))
+                .join();
+    }
+
+    @Test
     @Timeout(value = 2200, unit = TimeUnit.MILLISECONDS)
     void helloWorldCombined4UpperCase() {
         when(helloWorldService.hello()).thenReturn("hello");
-        // when(helloWorldService.hello()).thenCallRealMethod();
         when(helloWorldService.world()).thenCallRealMethod();
 
         CompletableFuture<String> completableFuture = completableFutureHelloWorld.helloWorldCombined4UpperCase();
