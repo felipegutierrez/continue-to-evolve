@@ -47,7 +47,7 @@ public class CompletableFutureHelloWorld {
         return completableFutureCombined;
     }
 
-    public CompletableFuture<String> helloWorldCombined3UpperCase() {
+    public CompletableFuture<String> helloWorldCombined4UpperCase() {
         stopWatch.reset();
         stopWatch.start();
 
@@ -63,9 +63,16 @@ public class CompletableFutureHelloWorld {
                     return " hi CompletableFuture!";
                 })
                 .thenApply(String::toUpperCase);
+        CompletableFuture<String> completableFutureBye = CompletableFuture
+                .supplyAsync(() -> {
+                    delay(1000);
+                    return " bye!";
+                })
+                .thenApply(String::toUpperCase);
         CompletableFuture<String> completableFutureCombined = completableFutureHello
                 .thenCombine(completableFutureWorld, (hello, world) -> hello + world)
-                .thenCombine(completableFutureHi, (previous, current) -> previous + current);
+                .thenCombine(completableFutureHi, (previous, current) -> previous + current)
+                .thenCombine(completableFutureBye, (previous, current) -> previous + current);
 
         stopWatch.stop();
 
