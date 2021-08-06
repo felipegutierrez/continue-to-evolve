@@ -28,6 +28,10 @@ dependencies {
     // StopWatch
     implementation 'org.apache.commons:commons-lang3:3.0'
 
+    // Slf4j + logback
+    compile 'org.slf4j:slf4j-api:1.7.32'
+    compile 'ch.qos.logback:logback-classic:1.2.5'
+
     // Scala
     // implementation 'org.scala-lang:scala-library:2.12.7'
     // implementation 'org.scalatest:scalatest_2.12:3.2.0'

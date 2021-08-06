@@ -8,3 +8,6 @@ target/*
 project/target**
 project/project**
 
+junit.log
+
+
