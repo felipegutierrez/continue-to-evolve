@@ -2,3 +2,9 @@
 .gradle/*
 build/*
 target/*
+
+.bsp*
+.idea*
+project/target**
+project/project**
+
